@@ -1,0 +1,6 @@
+method,method_display,mean_panel_size,min_panel_size,max_panel_size,mean_loco_gene_jaccard,genes_all_four,genes_at_least_two
+lasso,LASSO,281.5,271,295,0.21080853419816356,36,267
+elastic_net,Elastic Net,352.5,39,671,0.11546269039029683,6,323
+stability_selection_cutoff_0p60,Stability Selection,6.25,4,9,0.12783374033374031,0,4
+StableMate_significant_stable,StableMate,15.75,14,20,0.03258026695526695,0,4
+TENTACLES_V2_nmin6,TENTACLES V2,76.5,61,91,0.20967316028772412,6,74

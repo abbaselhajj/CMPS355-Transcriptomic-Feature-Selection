@@ -1,0 +1,25 @@
+{
+  "artifact": "data/validated/ibd_dataset_sample_aligned.zip",
+  "role": "User-accepted corrected sample-ID-aligned RNA-seq dataset; immutable research input",
+  "sha256": "8a83f20035fcac5ae5d8bfe496e4d7491e47400b61ca1080b828c8ad54e91a74",
+  "cohorts": [
+    "d1",
+    "d2",
+    "d3",
+    "d4"
+  ],
+  "expected_sample_counts": {
+    "d1": 260,
+    "d2": 179,
+    "d3": 76,
+    "d4": 174
+  },
+  "expected_total_samples": 689,
+  "expected_shared_gene_count": 9983,
+  "label_field": "class",
+  "label_values": [
+    "CD",
+    "Not IBD"
+  ],
+  "notes": "Counts and expected sizes verified for this accepted data artifact. They are data-integrity checks, not independently rederived sequencing or clinical diagnoses."
+}

@@ -1,0 +1,23 @@
+# Not included in public releases:
+data/
+runs/
+private/
+*.rds
+*.RData
+*.rdata
+*.rar
+*.parquet
+*patient_predictions*
+*heldout_predictions*
+*.pkl
+*.joblib
+.ipynb_checkpoints/
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+manuscript/*.aux
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.log
+manuscript/*.out

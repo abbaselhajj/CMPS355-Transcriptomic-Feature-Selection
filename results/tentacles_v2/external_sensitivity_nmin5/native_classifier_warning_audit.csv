@@ -1,0 +1,5 @@
+heldout,official_run_dir,native_gene_count,mlp_weight_errors,lightgbm_feature_fraction_errors,boruta_nan_warnings,evidence_status
+d1,/home/ali/CMPS355_TENTACLES_Local/runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z,90,8,5,105,native_fit_and_consensus_saved; model_quality_warnings_require_review
+d2,/home/ali/CMPS355_TENTACLES_Local/runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z,115,8,0,126,native_fit_and_consensus_saved; model_quality_warnings_require_review
+d3,/home/ali/CMPS355_TENTACLES_Local/runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z,107,8,0,108,native_fit_and_consensus_saved; model_quality_warnings_require_review
+d4,/home/ali/CMPS355_TENTACLES_Local/runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z,102,8,0,131,native_fit_and_consensus_saved; model_quality_warnings_require_review

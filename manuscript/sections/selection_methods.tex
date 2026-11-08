@@ -1,0 +1,30 @@
+\subsection{Stability Selection}
+\label{sec:stability_method}
+We implemented complementary-pairs Stability Selection using a class-balanced $L_1$-logistic base model \cite{meinshausen2010stability}. Within each training set, 30 random partitions produced 60 complementary half-sample fits. The base model's regularisation strength was calibrated on training data to select approximately 50 genes per fit. Each gene's selection frequency was its number of selections divided by 60. We saved signatures at frequency cutoffs 0.60, 0.75 and 0.90, with 0.75 designated as the original procedure's primary cutoff. The controlled five-method comparison instead uses the 0.60 panels; these choices must not be conflated. The method-specific predictive pipeline used the 50 highest-frequency genes with nonzero selection frequency and a fixed class-balanced $L_2$-logistic classifier ($C=1$), which is distinct from any thresholded signature. We also computed signatures within each individual cohort for separate gene-agreement analysis. This is an implementation of complementary-pairs selection frequencies, not the authors' \texttt{stabs} package; its theoretical false-selection bound was not claimed because the required assumptions were not established.
+
+\subsection{StableMate}
+\label{sec:stablemate_method}
+We used the authors' \texttt{StableMate} R package (version 0.1.0, pinned revision) \cite{deng2024stablemate}. For each LOCO fit, the three development cohorts defined the environments. The native procedure combined a random LASSO prefilter of 50 predictors per candidate, 2,000 candidate models in each of the prediction and stability ensembles, and 1,000 bootstrap replicates for importance estimation. A gene entered the stable-significant panel only if both its predictive and stability significance scores exceeded 0.975. Native held-out predictions used the fitted StableMate logistic predictor; these were kept separate from the controlled-classifier experiment, which refitted the same fixed $L_2$ learner to the selected panel. All four native fits and numerical prediction exports were audited, although the saved native R objects were not independently retrained and their reported fitting warnings were not resolved by that audit.
+
+\subsection{TENTACLES consensus procedure}
+\label{sec:tentacles_method}
+We used the authors' \texttt{TENTACLES} R package (version 0.1.0, pinned revision) \cite{montesi2026tentacles} as an algorithm-consensus selector. On each LOCO development set, the native RNA-seq preprocessing was followed by ten classifier--selector pairs: random forest/correlation, MLP/ROC, bagged MLP/ROC, linear SVM/Boruta, C5 rules/Boruta, LightGBM/ROC, decision tree/Boruta, MARS/Boruta, XGBoost/base, and PLS/Boruta. The classifiers were tuned with five-fold cross-validation, five candidate settings and F1 as the target metric; class downsampling was enabled. The corrected protocol explicitly preserves CD as the positive event and checks that the native fitted F1 scores use that orientation. The primary consensus requires at least six votes among nine models after excluding XGBoost; five of nine is a sensitivity threshold. Native votes must reproduce the exported gene sets. Only training cohorts contribute to native selection; a subsequent fixed logistic classifier supplies external predictions, not the package's internally fitted \texttt{testConsensus} model. The four native fits and both external evaluations have completed locally; the saved reports document D3/D4 recovery and incomplete tuning for the excluded D4 XGBoost model. The exported four-fold gene lists and 689 held-out predictions were independently checked against native voting records and saved scores; this check did not retrain the native R models or resolve their fitting warnings.
+
+\begin{table}[!t]
+\caption{Selected-gene panels used by the common classifier.}
+\label{tab:method_overview}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.13}
+\begin{tabular}{@{}p{2.0cm}p{5.9cm}@{}}
+\toprule
+Method & Panel definition \\
+\midrule
+LASSO & Nonzero logistic coefficients ($|\beta|>10^{-8}$) \\
+Elastic Net & Nonzero logistic coefficients ($|\beta|>10^{-8}$) \\
+Stability Selection & Frequency $\geq0.60$; original primary cutoff $0.75$ \\
+StableMate & Predictive and stability significance each $>0.975$ \\
+TENTACLES & V2 consensus: at least 6 votes among 9 eligible models; verified by independent panel/vote checks \\
+\bottomrule
+\end{tabular}
+\end{table}

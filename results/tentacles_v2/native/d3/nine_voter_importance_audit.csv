@@ -1,0 +1,10 @@
+"model","n_features","n_nonzero","n_positive","n_negative"
+"rand_forest_corr",1864,1864,1864,0
+"mlp_roc",421,421,199,222
+"bag_mlp_roc",421,421,421,0
+"svm_linear_boruta",116,116,116,0
+"C5_rules_boruta",118,118,118,0
+"lightGBM_roc",308,308,308,0
+"decision_tree_boruta",32,32,32,0
+"mars_boruta",4,4,4,0
+"pls_boruta",141,141,141,0

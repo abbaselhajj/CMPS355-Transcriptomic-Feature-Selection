@@ -1,0 +1,11 @@
+"model","rows","n_configurations","cv_f1","cv_folds","valid_single_selected_f1"
+"rand_forest_corr",1,1,"0.829978958567088","5",TRUE
+"mlp_roc",1,1,"0.821244181415645","5",TRUE
+"bag_mlp_roc",1,1,"0.83779699392516","5",TRUE
+"svm_linear_boruta",1,1,"0.847674164906086","5",TRUE
+"C5_rules_boruta",1,1,"0.857662188941706","5",TRUE
+"lightGBM_roc",1,1,"0.823915391892116","5",TRUE
+"decision_tree_boruta",1,1,"0.789939601774796","5",TRUE
+"mars_boruta",1,1,"0.806344641957694","5",TRUE
+"pls_boruta",1,1,"0.836026122615222","5",TRUE
+"xgboost_base",1,1,"0.857147290946174","4",FALSE

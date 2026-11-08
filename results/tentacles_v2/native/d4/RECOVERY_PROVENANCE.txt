@@ -1,0 +1,13 @@
+D4 canonical nine-voter consensus view; NOT a second native fit.
+Original D4 fitted model and originally FAILED ten-model CV gate: /home/ali/CMPS355_TENTACLES_Local/runs/tentacles_cd_positive_v2/d4/20261108T174423655704315Z
+Original D4 run and its failed status are preserved unchanged.
+Verified passed native nine-voter recovery (official getConsensus 6/5): /home/ali/CMPS355_TENTACLES_Local/runs/tentacles_cd_positive_v2_recovery/d4/20261108T193908629549132Z
+All source and output RDS objects are symlinks to immutable saved objects; not copies.
+Original failure was XGBoost having n=4, not n=5, selected CV F1 resamples.
+XGBoost was excluded from consensus BEFORE training by the study protocol.
+The nine actual voters have finite selected five-fold CV F1, independently
+verified CD-positive apparent fitted F1, and nonempty valid importance tables.
+Consensus result was independently checked from native nine-row gene-vote matrices.
+Passing status means recoverable nine-voter consensus for Stage10 external evaluation,
+not that XGBoost attained five CV folds or that Boruta warnings were resolved.
+Future readers MUST inspect the original failed run and recovery diagnostic tables.

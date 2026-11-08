@@ -1,0 +1,12 @@
+{
+  "fold_run": "/home/ali/CMPS355_TENTACLES_Local/runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z",
+  "interpretation": "A warning count is not a count of failed final models; inspect selected CV metrics and importance quality gates.",
+  "review_required": true,
+  "warning_counts": {
+    "boruta_missing_importance": 105,
+    "lightgbm_invalid_feature_fraction": 5,
+    "mlp_weight_limit": 8,
+    "tune_fit_errors": 0,
+    "warnings_generic": 0
+  }
+}

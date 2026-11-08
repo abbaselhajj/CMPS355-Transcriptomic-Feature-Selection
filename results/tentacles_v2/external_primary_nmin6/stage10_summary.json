@@ -1,0 +1,25 @@
+{
+  "consensus_min_votes": 6,
+  "consensus_voters": 9,
+  "important_limitation": "TENTACLES native tuning uses random inner 5-fold CV; this Stage10 common predictor is not authors testConsensus or native model performance",
+  "mean_balanced_accuracy_unweighted": 0.6550576553804478,
+  "mean_roc_auc_unweighted": 0.7225299559393727,
+  "method": "TENTACLES_CDpositive_native_nmin6_fixed_L2_logistic",
+  "n_evaluable_folds": 4,
+  "n_external_predictions": 689,
+  "n_genes_selected_at_least_twice": 74,
+  "n_genes_selected_in_all_four": 6,
+  "n_native_folds": 4,
+  "n_unique_heldout_patients": 689,
+  "native_consensus_sizes": {
+    "d1": 73,
+    "d2": 91,
+    "d3": 81,
+    "d4": 61
+  },
+  "native_event_class": "CD",
+  "protocol": "Fixed C=1, class_weight balanced, L2 logistic; log2(1+CPM) of full shared gene universe; outer-train-only scaling; threshold 0.5",
+  "sd_balanced_accuracy_unweighted": 0.09250462879370316,
+  "sd_roc_auc_unweighted": 0.10045942511411035,
+  "warning_audit": "Native candidate warning counts logged; full selected-model quality checks are gated in Stage9 V2"
+}

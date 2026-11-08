@@ -1,0 +1,10 @@
+This directory is a manifest-backed, additive canonical VIEW, not a new model fit.
+Original D3 native fitted model: /home/ali/CMPS355_TENTACLES_Local/runs/tentacles_cd_positive_v2/d3/20261108T152916779231898Z
+Original D3 native run remains failed at its stringent 10-importance gate.
+Passed author-consensus nine-voter recovery: /home/ali/CMPS355_TENTACLES_Local/runs/tentacles_cd_positive_v2_recovery/d3/20261108T173607911241241Z
+Recovery verification: source RDS SHA stable; nine-voter F1 and gene votes verified.
+XGBoost native importance was unavailable, but XGBoost was excluded by the predeclared consensus protocol.
+All RDS files are symlinks to preserved originals, not retrained or silently overwritten.
+Status below indicates valid native NMIN6/NMIN5 panels for external assessment; it is NOT
+an assertion that all 10 feature-importance tables were available.
+Boruta and model-tuning warnings remain unresolved quality qualifications.

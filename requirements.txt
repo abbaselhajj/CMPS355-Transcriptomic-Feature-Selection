@@ -1,0 +1,6 @@
+# Tested Stage 2 CPU reference environment, Python 3.11+.
+# Python Colab runtimes may require a kernel restart after installing.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+scikit-learn==1.8.0

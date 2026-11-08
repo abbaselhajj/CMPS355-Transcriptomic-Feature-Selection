@@ -1,0 +1,11 @@
+"wflow_id",".config",".metric","mean","std_err","n","preprocessor","model","rank"
+"rand_forest_corr","pre0_mod2_post0","f_meas",0.860312418678709,0.0222929778887532,5,"recipe","rand_forest",1
+"C5_rules_boruta","pre0_mod3_post0","f_meas",0.857434101024086,0.0207676538413203,5,"recipe","C5_rules",2
+"xgboost_base","pre0_mod4_post0","f_meas",0.85445992564124,0.0254742069296697,5,"recipe","boost_tree",3
+"svm_linear_boruta","pre0_mod3_post0","f_meas",0.848397656775201,0.023047598203076,5,"recipe","svm_linear",4
+"mars_boruta","pre0_mod5_post0","f_meas",0.848232975518519,0.0142348342211261,5,"recipe","mars",5
+"bag_mlp_roc","pre0_mod5_post0","f_meas",0.846052639913155,0.0314384693381579,5,"recipe","bag_mlp",6
+"lightGBM_roc","pre0_mod1_post0","f_meas",0.841268984283911,0.0298478956192364,5,"recipe","boost_tree",7
+"decision_tree_boruta","pre0_mod4_post0","f_meas",0.828848544856972,0.0232760975644583,5,"recipe","decision_tree",8
+"pls_boruta","pre0_mod4_post0","f_meas",0.828590744220882,0.0151879517239135,5,"recipe","pls",9
+"mlp_roc","pre0_mod1_post0","f_meas",0.821789117144399,0.0270888153503869,5,"recipe","mlp",10

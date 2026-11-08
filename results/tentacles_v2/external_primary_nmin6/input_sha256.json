@@ -1,0 +1,86 @@
+[
+  {
+    "relative_path": "data/validated/ibd_dataset_sample_aligned.zip",
+    "sha256": "8a83f20035fcac5ae5d8bfe496e4d7491e47400b61ca1080b828c8ad54e91a74"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d1/discovery/counts.csv",
+    "sha256": "e3338f185d971e73ddceba4a341495551c4cac933fb56acf48f12f092fb98361"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d1/discovery/clinical.csv",
+    "sha256": "f8738fc18bb1defaf8eb580cc623a5e3a551ee222a1cf2b6620ac1a1614cff0e"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d1/evaluation_only/counts.csv",
+    "sha256": "58de88fd9dcbdf8afd5ff7296436c135cab1bd0812a41ed3748d6e78eaf57193"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d1/evaluation_only/clinical.csv",
+    "sha256": "2d54379dfa6f276952601463a11f852197c6f6f519f2c6064226c3c5108ae346"
+  },
+  {
+    "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/consensus_genes_native.csv",
+    "sha256": "c08214a06305817d9e9e0e1d4533c045b0e8257dd77398544abae13c6a02e462"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d2/discovery/counts.csv",
+    "sha256": "b9baf0beed2d020fb3ba087f561e3ea16f887081bf5d2354b21b80f5dbf13d8e"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d2/discovery/clinical.csv",
+    "sha256": "95dab14a34aa5351d400474520e6da4d5a2efe1f1273b2ba6e9546dc8fdd07e5"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d2/evaluation_only/counts.csv",
+    "sha256": "e1b91ba40939f84a73d6b680ed640b7ce140690c87845c59dc715baf5f935581"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d2/evaluation_only/clinical.csv",
+    "sha256": "20785216c34091c891d7eef8af06770b92e9d53d9ca18b788d6aee563586a8ba"
+  },
+  {
+    "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/consensus_genes_native.csv",
+    "sha256": "c25901e49b11692f5069739b48ee67e8e60a7a1a365265ae45ffb788f5ddebe6"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d3/discovery/counts.csv",
+    "sha256": "c67ed4f2627b02a42ab9807b6762375643034facda8d42214fcbfb120ce126e1"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d3/discovery/clinical.csv",
+    "sha256": "a35c0ed1e2c6925573bccdce76d22705aac9d3bc538d3eb44c96c9b8f2116cb8"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d3/evaluation_only/counts.csv",
+    "sha256": "0f5d15e8b0770da59d0ca905e45e74cde5daf345ffb31745ec06f51cf9047a91"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d3/evaluation_only/clinical.csv",
+    "sha256": "5dd0b38035472a1188a269131f546ab70c33aae8b653697c0c9cb80e200c61a3"
+  },
+  {
+    "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/consensus_genes_native.csv",
+    "sha256": "e5d6aad785c05e718c775bf557f71376a63cad838c98a8a907e2f1cd7a868023"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d4/discovery/counts.csv",
+    "sha256": "2a197e047f3592c0eeacc3a8ed0446f572ef6b1243c976502dcc64656512675a"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d4/discovery/clinical.csv",
+    "sha256": "21276ff209d9b5c24820a42d74427850cd53abcd783bcbbd892c0ea36bbe2626"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d4/evaluation_only/counts.csv",
+    "sha256": "86505e4cb7aa73d2f9c72305158d19c1e7327d5b946f2605f5e90bfa5f478955"
+  },
+  {
+    "relative_path": "runs/tentacles_stage9_inputs/d4/evaluation_only/clinical.csv",
+    "sha256": "a82142aaab49df8790deb927d9f69236e561733b0387bc1ee688bfaaf22c414f"
+  },
+  {
+    "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/consensus_genes_native.csv",
+    "sha256": "db424df1d21184f093d6b1624de61e5c5412c857ce00a9d1cfb5b57762a9e868"
+  }
+]

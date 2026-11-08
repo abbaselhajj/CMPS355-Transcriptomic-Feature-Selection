@@ -1,0 +1,779 @@
+{
+  "artifacts": [
+    {
+      "bytes": 4275,
+      "relative_path": "r/tentacles_cdpos_v2_consensus.R",
+      "sha256": "3608cf8da6e89b7b2d8979aa2edfad9bf9440510a54b2a1f000d6ec03a0e4a95"
+    },
+    {
+      "bytes": 40,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/STATUS.txt",
+      "sha256": "aebe2ff20dc9646fd8c538910946cb4b539d105784e9df6d9327a6a7f882b830"
+    },
+    {
+      "bytes": 141,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/classifier_model_names.txt",
+      "sha256": "86f2cc6622f784a53d9b1f77345f3db050dd9d617e4c67940fc62c0a9c78f8eb"
+    },
+    {
+      "bytes": 23837,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/classifiers.log",
+      "sha256": "5d86b5c5bb2d309827b94f27cf1b0f7563fe9e8b9f52924781d4e034eef2a5e6"
+    },
+    {
+      "bytes": 3794,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/consensus.log",
+      "sha256": "bd6afec7b05ae2df866e59b095de5a68661e4a3198e48b6914a376823b96fab7"
+    },
+    {
+      "bytes": 591,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/consensus_genes_native.csv",
+      "sha256": "c08214a06305817d9e9e0e1d4533c045b0e8257dd77398544abae13c6a02e462"
+    },
+    {
+      "bytes": 731,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/consensus_genes_nmin5.csv",
+      "sha256": "e6dc9faceea5bee1f0e5a1fae8da85cd10cc3513ef41d5e74d3cd6debad8e630"
+    },
+    {
+      "bytes": 591,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/consensus_genes_nmin6.csv",
+      "sha256": "c08214a06305817d9e9e0e1d4533c045b0e8257dd77398544abae13c6a02e462"
+    },
+    {
+      "bytes": 4999,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/consensus_native_structure.txt",
+      "sha256": "b348ef84068e6dd5d4a9a2b35b85e5c3d9bcd9a4498f4b0f2ead0e717144f262"
+    },
+    {
+      "bytes": 305,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/consensus_protocol.txt",
+      "sha256": "32bc65a01d21c7f9c6ce23539cef27fc841d8d750b46308fefc44dda42aca039"
+    },
+    {
+      "bytes": 1018,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/input_and_code_sha256.txt",
+      "sha256": "9e548b17a2cabec4e5deba83d5a17a3679a80e10bdd47525f01bd582ac4bc7bc"
+    },
+    {
+      "bytes": 4813,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/installed_R_package_versions.csv",
+      "sha256": "108f6d649d1a5f74e1835395b20d499b46b73b6f7621be507fab78b9e66cb52a"
+    },
+    {
+      "bytes": 200,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/model_selector_pairs.csv",
+      "sha256": "4fffbe2bb562f7213073da011fd3c0be4b22c3516710bc57aa1b1b4cb35fc557"
+    },
+    {
+      "bytes": 948,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/native_f1_event_orientation.csv",
+      "sha256": "a73da19019d2e0daa3b1e5f13dd31f0be58c80ac225969bda3c1ac80fb49d10f"
+    },
+    {
+      "bytes": 621,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/native_feature_importance_quality.csv",
+      "sha256": "d25a4e3e7e6163112d7d7d53c0b5f3a10b26e16b087d76a5ad475f59bdaa2fd3"
+    },
+    {
+      "bytes": 7395,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/native_preprocess_structure_BEFORE_relevel.txt",
+      "sha256": "02b64738c12b9d9f0baf92f3e2e618fd7e6e3d7ac6606abde251947ff481f5de"
+    },
+    {
+      "bytes": 1125,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/native_selected_cv_f1.csv",
+      "sha256": "3db5f3e7181e3cdcf971cbce7aa9be7065a34a824d30ac51daad04b55c98ba34"
+    },
+    {
+      "bytes": 23672,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/native_votes_nmin5.csv",
+      "sha256": "f209ecbfdf9dfcf6655fa54b214e9c1d2cc99b902c67f0eb31396b384d27cd51"
+    },
+    {
+      "bytes": 23672,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/native_votes_nmin6.csv",
+      "sha256": "f209ecbfdf9dfcf6655fa54b214e9c1d2cc99b902c67f0eb31396b384d27cd51"
+    },
+    {
+      "bytes": 1119,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/output_rds_sha256.txt",
+      "sha256": "cd9c51067fcb542b9309dd72adc02c9b41dfb7fbf21a095700e0af2ead7ff4f8"
+    },
+    {
+      "bytes": 228,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/preprocess_event_level_audit.txt",
+      "sha256": "47eb56dcddd984272022a8b72a054268ceb83f9a2abf653243fd135707c427ad"
+    },
+    {
+      "bytes": 178,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/protocol_cd_positive_v2.txt",
+      "sha256": "62819899cb079575bfcf8bc8b579b61d0c843e9e3b75e1a8929cb884715d5bf7"
+    },
+    {
+      "bytes": 4609,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/r_session_info.txt",
+      "sha256": "7e5d90b6054df630e9ac231c93d749ba33307eb0aab817db58afddb0c0027e44"
+    },
+    {
+      "bytes": 257,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/runclassifiers_structure.txt",
+      "sha256": "c784a2c3f0ee631b4b9a42b72f732d4794fa807f1122ecee98ab501fde5ed063"
+    },
+    {
+      "bytes": 464,
+      "relative_path": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z/warning_summary.json",
+      "sha256": "9c8abed6b51ad2153dbc52a3f716e24dff3c78eb7c9e6eac6e3940b83342c283"
+    },
+    {
+      "bytes": 40,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/STATUS.txt",
+      "sha256": "aebe2ff20dc9646fd8c538910946cb4b539d105784e9df6d9327a6a7f882b830"
+    },
+    {
+      "bytes": 141,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/classifier_model_names.txt",
+      "sha256": "86f2cc6622f784a53d9b1f77345f3db050dd9d617e4c67940fc62c0a9c78f8eb"
+    },
+    {
+      "bytes": 24853,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/classifiers.log",
+      "sha256": "9b96d18c531a9d3f5664471b43d6049b4608824d63c095300bf150b2fdf67b96"
+    },
+    {
+      "bytes": 4264,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/consensus.log",
+      "sha256": "ac858e9083252231658d0fdad333b3ea3251351e5e20feafc2e8fe82c059a5db"
+    },
+    {
+      "bytes": 720,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/consensus_genes_native.csv",
+      "sha256": "c25901e49b11692f5069739b48ee67e8e60a7a1a365265ae45ffb788f5ddebe6"
+    },
+    {
+      "bytes": 920,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/consensus_genes_nmin5.csv",
+      "sha256": "1cf6c3a61e88ea823f3118a3de294a8b8974ff8e02c2994d5a0be2fe18630659"
+    },
+    {
+      "bytes": 720,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/consensus_genes_nmin6.csv",
+      "sha256": "c25901e49b11692f5069739b48ee67e8e60a7a1a365265ae45ffb788f5ddebe6"
+    },
+    {
+      "bytes": 5006,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/consensus_native_structure.txt",
+      "sha256": "f798eb8e8e5cf315053c684e35d2e7aef6bdee937b9efeb94c85684fc140beb7"
+    },
+    {
+      "bytes": 305,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/consensus_protocol.txt",
+      "sha256": "32bc65a01d21c7f9c6ce23539cef27fc841d8d750b46308fefc44dda42aca039"
+    },
+    {
+      "bytes": 1018,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/input_and_code_sha256.txt",
+      "sha256": "f78051925867a1379d4fe9e622b9bda6a52ec6d51ff335a37de8965ce12eea1c"
+    },
+    {
+      "bytes": 4813,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/installed_R_package_versions.csv",
+      "sha256": "108f6d649d1a5f74e1835395b20d499b46b73b6f7621be507fab78b9e66cb52a"
+    },
+    {
+      "bytes": 200,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/model_selector_pairs.csv",
+      "sha256": "4fffbe2bb562f7213073da011fd3c0be4b22c3516710bc57aa1b1b4cb35fc557"
+    },
+    {
+      "bytes": 948,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/native_f1_event_orientation.csv",
+      "sha256": "b9a078c61ce3d4487ef3559f1cbbcd34129930bf4382653648c13fdf4652e93c"
+    },
+    {
+      "bytes": 620,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/native_feature_importance_quality.csv",
+      "sha256": "797db4f43c02d3bc19cda1bd75a4ccfed58b1c232feea0553d6b94788d3b02c3"
+    },
+    {
+      "bytes": 8147,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/native_preprocess_structure_BEFORE_relevel.txt",
+      "sha256": "d4024535326b3548887956f5c26f5ea37b2c798833b7c7c9e7723d8e1c7d3a2b"
+    },
+    {
+      "bytes": 1121,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/native_selected_cv_f1.csv",
+      "sha256": "bfd5fbae0138238844b9b9b6ae9a835e073969105883c9f4d4a8879d5f9f772e"
+    },
+    {
+      "bytes": 21477,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/native_votes_nmin5.csv",
+      "sha256": "12ba28198b854a0fdaf4806ceadaa26db90c0b9a5e4497beadeb70aae4d58822"
+    },
+    {
+      "bytes": 21477,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/native_votes_nmin6.csv",
+      "sha256": "12ba28198b854a0fdaf4806ceadaa26db90c0b9a5e4497beadeb70aae4d58822"
+    },
+    {
+      "bytes": 1119,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/output_rds_sha256.txt",
+      "sha256": "1bceae5ac8cce70a71fa27d18935f735a37f28b2ac7f9144c18449d5c7d0b935"
+    },
+    {
+      "bytes": 228,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/preprocess_event_level_audit.txt",
+      "sha256": "47eb56dcddd984272022a8b72a054268ceb83f9a2abf653243fd135707c427ad"
+    },
+    {
+      "bytes": 178,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/protocol_cd_positive_v2.txt",
+      "sha256": "232777b86fc92ffd3657766e72084a9979cc4655c02c60a6bb13abd3281217d3"
+    },
+    {
+      "bytes": 4609,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/r_session_info.txt",
+      "sha256": "7e5d90b6054df630e9ac231c93d749ba33307eb0aab817db58afddb0c0027e44"
+    },
+    {
+      "bytes": 257,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/runclassifiers_structure.txt",
+      "sha256": "998aa4388e0d19673f104fa4eacc64edcd98fd8bc796accd31347801eef226d7"
+    },
+    {
+      "bytes": 464,
+      "relative_path": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z/warning_summary.json",
+      "sha256": "d4077801a27da84e54ed9d3bc65e8b09aed16d670a8cb1bffcf15e8a488646e1"
+    },
+    {
+      "bytes": 48,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T152916779231898Z/STATUS.txt",
+      "sha256": "cdb5cb3d743223be7dce81e3ce206b6b9b3d847d4f8cd4f0207b12ed6282741b"
+    },
+    {
+      "bytes": 24792,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T152916779231898Z/classifiers.log",
+      "sha256": "f13ed9fcf665d5c51699c06ef3806b3da2c48edcfb03f3828b52a21bed9613cd"
+    },
+    {
+      "bytes": 464,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T152916779231898Z/warning_summary.json",
+      "sha256": "0aecfd9f8a4b36609eb02a32ee44bc7b34368079fb61d52e45e2ea10baef8a9f"
+    },
+    {
+      "bytes": 945,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/RECOVERY_PROVENANCE.txt",
+      "sha256": "eacd536b1598f9c1d785c10b4413efea3a5a50de8658d72a62af5501f9465f0f"
+    },
+    {
+      "bytes": 310,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/RECOVERY_STATUS.txt",
+      "sha256": "19251543b3a3d2253a38734cc276c9a33f2b831a7d05caea392ac14c22850d93"
+    },
+    {
+      "bytes": 40,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/STATUS.txt",
+      "sha256": "aebe2ff20dc9646fd8c538910946cb4b539d105784e9df6d9327a6a7f882b830"
+    },
+    {
+      "bytes": 24792,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/classifiers.log",
+      "sha256": "f13ed9fcf665d5c51699c06ef3806b3da2c48edcfb03f3828b52a21bed9613cd"
+    },
+    {
+      "bytes": 653,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/consensus_genes_native.csv",
+      "sha256": "e5d6aad785c05e718c775bf557f71376a63cad838c98a8a907e2f1cd7a868023"
+    },
+    {
+      "bytes": 854,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/consensus_genes_nmin5.csv",
+      "sha256": "9ff64271393e98c74001ea52acc75604fa2da0849222df17339f1e4b1760b6ad"
+    },
+    {
+      "bytes": 653,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/consensus_genes_nmin6.csv",
+      "sha256": "e5d6aad785c05e718c775bf557f71376a63cad838c98a8a907e2f1cd7a868023"
+    },
+    {
+      "bytes": 352,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/consensus_protocol.txt",
+      "sha256": "5f061bfbe6ea8179b49dc6fa20cb391664105108bce57d42bd11dd690bf6539d"
+    },
+    {
+      "bytes": 1018,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/input_and_code_sha256.txt",
+      "sha256": "d184e3d7f4c243fcc40c453f3d1f62ca7e5d2d9e05a81352edf65823a707a1c1"
+    },
+    {
+      "bytes": 200,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/model_selector_pairs.csv",
+      "sha256": "4fffbe2bb562f7213073da011fd3c0be4b22c3516710bc57aa1b1b4cb35fc557"
+    },
+    {
+      "bytes": 8147,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/native_preprocess_structure_BEFORE_relevel.txt",
+      "sha256": "33aefa63b5054b7d74c210a17312e91912c29e6578704656ea085acb508ad344"
+    },
+    {
+      "bytes": 21387,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/native_votes_nmin5.csv",
+      "sha256": "759e29746ab582d39251cc37427a1a7ed3ab52188b5adc25604daec48e424fa2"
+    },
+    {
+      "bytes": 21387,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/native_votes_nmin6.csv",
+      "sha256": "759e29746ab582d39251cc37427a1a7ed3ab52188b5adc25604daec48e424fa2"
+    },
+    {
+      "bytes": 900,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/nine_voter_f1_audit.csv",
+      "sha256": "1fe8f78322e89f2761ba2ddb309e57ad55bd88a9f6c50cd92ec6cca56a1a606f"
+    },
+    {
+      "bytes": 327,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/nine_voter_importance_audit.csv",
+      "sha256": "303d71cef01094011da7a83eeb13e6951be568baaee170acc48234f805c3dd12"
+    },
+    {
+      "bytes": 751,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/output_rds_sha256.txt",
+      "sha256": "941c6ac0d68fbbfd572364bcdba608e37b36609eec762e8595bd82b6818de010"
+    },
+    {
+      "bytes": 228,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/preprocess_event_level_audit.txt",
+      "sha256": "47eb56dcddd984272022a8b72a054268ceb83f9a2abf653243fd135707c427ad"
+    },
+    {
+      "bytes": 178,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/protocol_cd_positive_v2.txt",
+      "sha256": "69a2832cbd27356ebdd1883c04401f68d719551b3fdaae392946fb5affcabca0"
+    },
+    {
+      "bytes": 4495,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/recovery.log",
+      "sha256": "2e3bc874d8a1fcc66164c33e8fd2f6575b5cb1adeec18ad7834e554872e54033"
+    },
+    {
+      "bytes": 187,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/source_rds_sha256_AFTER.txt",
+      "sha256": "df2d5f4941fca11e849515af8cdca3613ba75977111ed2da42f613e6f301f369"
+    },
+    {
+      "bytes": 187,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/source_rds_sha256_BEFORE.txt",
+      "sha256": "df2d5f4941fca11e849515af8cdca3613ba75977111ed2da42f613e6f301f369"
+    },
+    {
+      "bytes": 464,
+      "relative_path": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z/warning_summary.json",
+      "sha256": "0aecfd9f8a4b36609eb02a32ee44bc7b34368079fb61d52e45e2ea10baef8a9f"
+    },
+    {
+      "bytes": 48,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T174423655704315Z/STATUS.txt",
+      "sha256": "cdb5cb3d743223be7dce81e3ce206b6b9b3d847d4f8cd4f0207b12ed6282741b"
+    },
+    {
+      "bytes": 27037,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T174423655704315Z/classifiers.log",
+      "sha256": "1b564543fbb4f0e4face8ba87cd714e007acce5d9a09c2403f60e15601845213"
+    },
+    {
+      "bytes": 608,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T174423655704315Z/native_feature_importance_quality.csv",
+      "sha256": "dd147d319e9b7f8d13de113a1cffc4fb19ce42a9f46bd8e6941c7163fb838411"
+    },
+    {
+      "bytes": 464,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T174423655704315Z/warning_summary.json",
+      "sha256": "f8a6ffe86dd280b434d23f5c585192041d992dbf88ac9ee91569ff97c1260bee"
+    },
+    {
+      "bytes": 1187,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/RECOVERY_PROVENANCE.txt",
+      "sha256": "359f1680fc5f9ca0d03ec69440c7857e62ee7d54cc8e1ead47f2d59cdc5fb02e"
+    },
+    {
+      "bytes": 430,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/RECOVERY_STATUS.txt",
+      "sha256": "3dcc167ea75b3b4ca6b01c654d0c695eccf6b15d4e8d99347bd3ecc7e486f3bf"
+    },
+    {
+      "bytes": 40,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/STATUS.txt",
+      "sha256": "aebe2ff20dc9646fd8c538910946cb4b539d105784e9df6d9327a6a7f882b830"
+    },
+    {
+      "bytes": 27037,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/classifiers.log",
+      "sha256": "1b564543fbb4f0e4face8ba87cd714e007acce5d9a09c2403f60e15601845213"
+    },
+    {
+      "bytes": 482,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/consensus_genes_native.csv",
+      "sha256": "db424df1d21184f093d6b1624de61e5c5412c857ce00a9d1cfb5b57762a9e868"
+    },
+    {
+      "bytes": 812,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/consensus_genes_nmin5.csv",
+      "sha256": "c04b85436eb742bf7ca98bd8f6cf73e4e4a5321f5b0ebb63891e75db3fcdf8c4"
+    },
+    {
+      "bytes": 482,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/consensus_genes_nmin6.csv",
+      "sha256": "db424df1d21184f093d6b1624de61e5c5412c857ce00a9d1cfb5b57762a9e868"
+    },
+    {
+      "bytes": 376,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/consensus_protocol.txt",
+      "sha256": "5caff9b7c8e2f92ebfd6595f566a1bb6602679570550f71bd059d499f02cae7e"
+    },
+    {
+      "bytes": 1018,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/input_and_code_sha256.txt",
+      "sha256": "96046b9c5482daefddbcff2df953b0ef7f7fdd461e72eed080b88be8b78ae237"
+    },
+    {
+      "bytes": 200,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/model_selector_pairs.csv",
+      "sha256": "4fffbe2bb562f7213073da011fd3c0be4b22c3516710bc57aa1b1b4cb35fc557"
+    },
+    {
+      "bytes": 1121,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/native_all_f1_rows.csv",
+      "sha256": "32210171d4067136cf3af48c1ec0759592a97ddd757b74b3e24332da2702346d"
+    },
+    {
+      "bytes": 4267,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/native_all_tuning_metrics.csv",
+      "sha256": "4a044cbd5f58861f788c7d0c368541ee4feafaa19e5da457b38f48dc6afc13fd"
+    },
+    {
+      "bytes": 571,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/native_cv_f1_by_model.csv",
+      "sha256": "c83913c32e3c0e5a631209e2e526d94c3c2991ac1cbe08ca972741bf15cd53de"
+    },
+    {
+      "bytes": 1955,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/native_f1_orientation_readback.csv",
+      "sha256": "47ed4de9afc45043f9b10e5e055158ea84e2062060e64d4c7ff2c0efba4ab3ba"
+    },
+    {
+      "bytes": 608,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/native_feature_importance_quality.csv",
+      "sha256": "dd147d319e9b7f8d13de113a1cffc4fb19ce42a9f46bd8e6941c7163fb838411"
+    },
+    {
+      "bytes": 334,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/native_feature_importance_readback.csv",
+      "sha256": "53a8e738d6e742794c5f401b84190ef926437fd08991355c74b8f6445a7de0f5"
+    },
+    {
+      "bytes": 8147,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/native_preprocess_structure_BEFORE_relevel.txt",
+      "sha256": "ebeb55af2bcde41d06e4bd69c4fe3be9fc0fd779b0efb36809562dc4a2bd9638"
+    },
+    {
+      "bytes": 17049,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/native_votes_nmin5.csv",
+      "sha256": "96e70db15b023fe866b2ab11c2fb714eb7d9509891ea3a9b02de9ee34b8542bd"
+    },
+    {
+      "bytes": 17049,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/native_votes_nmin6.csv",
+      "sha256": "96e70db15b023fe866b2ab11c2fb714eb7d9509891ea3a9b02de9ee34b8542bd"
+    },
+    {
+      "bytes": 751,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/output_rds_sha256.txt",
+      "sha256": "da72db8309949c52c1230776bffe3f8e672036a5d26d67f64bf58766922483eb"
+    },
+    {
+      "bytes": 228,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/preprocess_event_level_audit.txt",
+      "sha256": "47eb56dcddd984272022a8b72a054268ceb83f9a2abf653243fd135707c427ad"
+    },
+    {
+      "bytes": 178,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/protocol_cd_positive_v2.txt",
+      "sha256": "0fedf04a065b41aa6f9d6d3e93a4353f4f2b3d5d18e2f7423b602a29a35099b7"
+    },
+    {
+      "bytes": 7221,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/recovery.log",
+      "sha256": "e81d956cc2ab20728e4db7092358e8a2ef73194d1fd500c2a3b823c3983f39d6"
+    },
+    {
+      "bytes": 257,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/runclassifiers_structure.txt",
+      "sha256": "35795edb6049512083e44972e83d3582295e3fad7f90d85bfd7a970d03a026a0"
+    },
+    {
+      "bytes": 187,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/source_rds_sha256_AFTER.txt",
+      "sha256": "bcfa6b32d7c0a5ed4456e741c0cc88bfb611b2c77ea9ae9cdd2e6fd6f05bc2f1"
+    },
+    {
+      "bytes": 187,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/source_rds_sha256_BEFORE.txt",
+      "sha256": "bcfa6b32d7c0a5ed4456e741c0cc88bfb611b2c77ea9ae9cdd2e6fd6f05bc2f1"
+    },
+    {
+      "bytes": 464,
+      "relative_path": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z/warning_summary.json",
+      "sha256": "f8a6ffe86dd280b434d23f5c585192041d992dbf88ac9ee91569ff97c1260bee"
+    },
+    {
+      "bytes": 62,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin5/20261108T194659139917Z/STAGE10_PASS.txt",
+      "sha256": "c5931ede6914964188ac9a32cf50e385c933a907cc81541dea8f9a219219fc4b"
+    },
+    {
+      "bytes": 3303,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin5/20261108T194659139917Z/gene_selection_frequency.csv",
+      "sha256": "437fab0d7455d31190687f6a92e1ca8aae31b05246a5179e69affe1791d4ae31"
+    },
+    {
+      "bytes": 76,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin5/20261108T194659139917Z/genes_in_all_four_loco_panels.txt",
+      "sha256": "56d0eadffd880fbeb96a39501d533a3f8b420d98fbfd162964ed6b96183a8521"
+    },
+    {
+      "bytes": 1582,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin5/20261108T194659139917Z/heldout_metrics.csv",
+      "sha256": "6a79b484ba8984d75dba260e7f361514ee90432c9e45fb14b4abc25407e15412"
+    },
+    {
+      "bytes": 74286,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin5/20261108T194659139917Z/heldout_predictions.csv",
+      "sha256": "608d0cdf9c9cb451d6a834111420c0f5a498f7d4e793108ece948e319389d8e7"
+    },
+    {
+      "bytes": 3695,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin5/20261108T194659139917Z/input_sha256.json",
+      "sha256": "1d2593b914dbca4d3281eafb85940125bae99f4f50a0a7fd5cd1020741bc1aaa"
+    },
+    {
+      "bytes": 841,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin5/20261108T194659139917Z/native_classifier_warning_audit.csv",
+      "sha256": "37c7eb8e508bec622bae208f656404d9768f0d533cb2feaa3073fc7f64202a9e"
+    },
+    {
+      "bytes": 2711,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin5/20261108T194659139917Z/output_sha256.txt",
+      "sha256": "0efec822ac0cc590aa01aed49707dece5b86ce8f4e53061288e477704f5a66b7"
+    },
+    {
+      "bytes": 299,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin5/20261108T194659139917Z/pairwise_gene_jaccard.csv",
+      "sha256": "5a75466a9d3779967df66fc5b4a34f0529bd652883124fd31bcbb53e9f2a4413"
+    },
+    {
+      "bytes": 26499,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin5/20261108T194659139917Z/selected_genes.csv",
+      "sha256": "c61b324b6eef22fa5931876fcc968bfbb1bc1d08f4460908353e8b912053661d"
+    },
+    {
+      "bytes": 1730,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin5/20261108T194659139917Z/stage10_protocol.md",
+      "sha256": "00f80f6cb9055eb21fc43246f68ae756ed33eefe5e4b92be32ab1af617312aad"
+    },
+    {
+      "bytes": 1092,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin5/20261108T194659139917Z/stage10_summary.json",
+      "sha256": "f502891aeb4d7c5bc0e1384ce1d6aac2fbfa392722ce1df360e082a9006e7ff1"
+    },
+    {
+      "bytes": 62,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/STAGE10_PASS.txt",
+      "sha256": "c5931ede6914964188ac9a32cf50e385c933a907cc81541dea8f9a219219fc4b"
+    },
+    {
+      "bytes": 2475,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/gene_selection_frequency.csv",
+      "sha256": "55189a1ae6cca5b4a80fffd774a64fc8f6f8495048844da69877b0cbd4390fd8"
+    },
+    {
+      "bytes": 33,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/genes_in_all_four_loco_panels.txt",
+      "sha256": "3576efda7a4a122850ae364d50d765a7efeba85e0bac1064cbbde034b1af268e"
+    },
+    {
+      "bytes": 1582,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/heldout_metrics.csv",
+      "sha256": "142a0a6b77c0963adec38b2c31a1ed0cf8498a6f36d86e0a90c58573773495c9"
+    },
+    {
+      "bytes": 74249,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/heldout_predictions.csv",
+      "sha256": "ca6e3049620841ae48f61a0612289e0e335874826d53f94c459643171bc76ec6"
+    },
+    {
+      "bytes": 3699,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/input_sha256.json",
+      "sha256": "340eddb38c2fb3a1c2c8957cd08b09774796157e57638406175c241b736759d9"
+    },
+    {
+      "bytes": 838,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/native_classifier_warning_audit.csv",
+      "sha256": "eb1d247827c31dfa4a1ebabbacc101785dcc696bf1ce4e768ead03eab796d9fa"
+    },
+    {
+      "bytes": 2711,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/output_sha256.txt",
+      "sha256": "89574629e9a29bacd7f1b77f98a6f47a47c2e28e988a212cc7c183f2e20d5806"
+    },
+    {
+      "bytes": 287,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/pairwise_gene_jaccard.csv",
+      "sha256": "ff4fa86123a149aface22bcebaa93ec1bf1c742ecbe1f8100c1018b10b5f248e"
+    },
+    {
+      "bytes": 19553,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/selected_genes.csv",
+      "sha256": "79b8a27e6880be73bfdb444f692f7261a91453346048129d1a99d6822f3692c9"
+    },
+    {
+      "bytes": 1730,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/stage10_protocol.md",
+      "sha256": "b8ed93799e766d7718b389c48783a55f55a391d821396c8d251d65e56a25ed95"
+    },
+    {
+      "bytes": 1088,
+      "relative_path": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/stage10_summary.json",
+      "sha256": "af4e5b6a0e3a0d6dc2b388f611b0b5a549c7c16cb6d95b88d50c838da41c51a6"
+    },
+    {
+      "bytes": 310,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d3/20261108T173607911241241Z/RECOVERY_STATUS.txt",
+      "sha256": "19251543b3a3d2253a38734cc276c9a33f2b831a7d05caea392ac14c22850d93"
+    },
+    {
+      "bytes": 4495,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d3/20261108T173607911241241Z/recovery.log",
+      "sha256": "2e3bc874d8a1fcc66164c33e8fd2f6575b5cb1adeec18ad7834e554872e54033"
+    },
+    {
+      "bytes": 187,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d3/20261108T173607911241241Z/source_rds_sha256_AFTER.txt",
+      "sha256": "df2d5f4941fca11e849515af8cdca3613ba75977111ed2da42f613e6f301f369"
+    },
+    {
+      "bytes": 187,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d3/20261108T173607911241241Z/source_rds_sha256_BEFORE.txt",
+      "sha256": "df2d5f4941fca11e849515af8cdca3613ba75977111ed2da42f613e6f301f369"
+    },
+    {
+      "bytes": 117,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d4/20261108T193314905379371Z/RECOVERY_STATUS.txt",
+      "sha256": "9d3d68984ebf09eceaf7b15e3d7bc858037b35fb6e4db0e775f7d538d0836867"
+    },
+    {
+      "bytes": 571,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d4/20261108T193314905379371Z/native_cv_f1_by_model.csv",
+      "sha256": "c83913c32e3c0e5a631209e2e526d94c3c2991ac1cbe08ca972741bf15cd53de"
+    },
+    {
+      "bytes": 618,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d4/20261108T193314905379371Z/native_f1_orientation_readback.csv",
+      "sha256": "29dfa4d894003f6a564b0012e215ab80ade7f611f5b33283a22b161f561a8bea"
+    },
+    {
+      "bytes": 334,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d4/20261108T193314905379371Z/native_feature_importance_readback.csv",
+      "sha256": "53a8e738d6e742794c5f401b84190ef926437fd08991355c74b8f6445a7de0f5"
+    },
+    {
+      "bytes": 2185,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d4/20261108T193314905379371Z/recovery.log",
+      "sha256": "87a531c0ebc64fe0376be59474e91721a783da54bc8eef2220a3a611132c0de4"
+    },
+    {
+      "bytes": 187,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d4/20261108T193314905379371Z/source_rds_sha256_AFTER.txt",
+      "sha256": "bcfa6b32d7c0a5ed4456e741c0cc88bfb611b2c77ea9ae9cdd2e6fd6f05bc2f1"
+    },
+    {
+      "bytes": 187,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d4/20261108T193314905379371Z/source_rds_sha256_BEFORE.txt",
+      "sha256": "bcfa6b32d7c0a5ed4456e741c0cc88bfb611b2c77ea9ae9cdd2e6fd6f05bc2f1"
+    },
+    {
+      "bytes": 430,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d4/20261108T193908629549132Z/RECOVERY_STATUS.txt",
+      "sha256": "3dcc167ea75b3b4ca6b01c654d0c695eccf6b15d4e8d99347bd3ecc7e486f3bf"
+    },
+    {
+      "bytes": 571,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d4/20261108T193908629549132Z/native_cv_f1_by_model.csv",
+      "sha256": "c83913c32e3c0e5a631209e2e526d94c3c2991ac1cbe08ca972741bf15cd53de"
+    },
+    {
+      "bytes": 1955,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d4/20261108T193908629549132Z/native_f1_orientation_readback.csv",
+      "sha256": "47ed4de9afc45043f9b10e5e055158ea84e2062060e64d4c7ff2c0efba4ab3ba"
+    },
+    {
+      "bytes": 334,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d4/20261108T193908629549132Z/native_feature_importance_readback.csv",
+      "sha256": "53a8e738d6e742794c5f401b84190ef926437fd08991355c74b8f6445a7de0f5"
+    },
+    {
+      "bytes": 7221,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d4/20261108T193908629549132Z/recovery.log",
+      "sha256": "e81d956cc2ab20728e4db7092358e8a2ef73194d1fd500c2a3b823c3983f39d6"
+    },
+    {
+      "bytes": 187,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d4/20261108T193908629549132Z/source_rds_sha256_AFTER.txt",
+      "sha256": "bcfa6b32d7c0a5ed4456e741c0cc88bfb611b2c77ea9ae9cdd2e6fd6f05bc2f1"
+    },
+    {
+      "bytes": 187,
+      "relative_path": "runs/tentacles_cd_positive_v2_recovery/d4/20261108T193908629549132Z/source_rds_sha256_BEFORE.txt",
+      "sha256": "bcfa6b32d7c0a5ed4456e741c0cc88bfb611b2c77ea9ae9cdd2e6fd6f05bc2f1"
+    },
+    {
+      "bytes": 19406,
+      "relative_path": "src/cmps355/tentacles_cdpos_v2_external.py",
+      "sha256": "ff0d2f72f98025b9b61f8b49c6c0d4be1e50eaf3695df73a52bb35cfd695d814"
+    }
+  ],
+  "canonical_folds": {
+    "d1": "runs/tentacles_cd_positive_v2/d1/20261108T113615900738731Z",
+    "d2": "runs/tentacles_cd_positive_v2/d2/20261108T134313151315140Z",
+    "d3": "runs/tentacles_cd_positive_v2/d3/20261108T174314673269857Z",
+    "d4": "runs/tentacles_cd_positive_v2/d4/20261108T194549418151545Z"
+  },
+  "created_utc": "2026-11-08T20:24:40.747259+00:00",
+  "evaluation": {
+    "5": {
+      "directory": "runs/tentacles_cd_positive_v2_external_nmin5/20261108T194659139917Z",
+      "mean_auroc": 0.6908269926606468,
+      "mean_balanced_accuracy": 0.6465195786829322,
+      "signature_sizes": {
+        "d1": 90,
+        "d2": 115,
+        "d3": 107,
+        "d4": 102
+      }
+    },
+    "6": {
+      "directory": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z",
+      "mean_auroc": 0.7225299559393727,
+      "mean_balanced_accuracy": 0.6550576553804478,
+      "signature_sizes": {
+        "d1": 73,
+        "d2": 91,
+        "d3": 81,
+        "d4": 61
+      }
+    }
+  },
+  "format": "CMPS355_TENTACLES_V2_FINAL_EVIDENCE_20261108",
+  "note": "Contains patient-level heldout predictions and private provenance: retain privately. No trained RDS or joblib files.",
+  "root_name": "CMPS355_TENTACLES_Local",
+  "status": "READ_ONLY_EXPORT_NMIN6_AND_NMIN5_VALIDATED"
+}
