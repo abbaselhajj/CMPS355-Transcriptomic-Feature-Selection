@@ -1,0 +1,26 @@
+method,K,n_evaluable_folds,evaluable_cohorts,macro_auroc,macro_bacc
+Corrected Nested LASSO,10,4,d1;d2;d3;d4,0.6860170146206908,0.6134970794899028
+Corrected Nested LASSO,25,4,d1;d2;d3;d4,0.7072441340264395,0.6256265805212249
+Corrected Nested LASSO,50,4,d1;d2;d3;d4,0.7251696795698657,0.6282530245795744
+Corrected Nested LASSO,100,1,d3,0.7289915966386554,0.6050420168067226
+Corrected Nested LASSO,200,1,d3,0.7023809523809524,0.5868347338935574
+Corrected Nested Elastic Net,10,4,d1;d2;d3;d4,0.7435768031955335,0.5963218838025526
+Corrected Nested Elastic Net,25,3,d2;d3;d4,0.7174227070244822,0.6195088135072508
+Corrected Nested Elastic Net,50,1,d3,0.6435574229691877,0.5287114845938375
+Corrected Nested Elastic Net,100,1,d3,0.6820728291316527,0.572829131652661
+Corrected Nested Elastic Net,200,1,d3,0.6799719887955182,0.6078431372549019
+TENTACLES V2 (6/9 consensus),10,0,,,
+TENTACLES V2 (6/9 consensus),25,0,,,
+TENTACLES V2 (6/9 consensus),50,0,,,
+TENTACLES V2 (6/9 consensus),100,0,,,
+TENTACLES V2 (6/9 consensus),200,0,,,
+StableMate (significant-stable),10,0,,,
+StableMate (significant-stable),25,0,,,
+StableMate (significant-stable),50,0,,,
+StableMate (significant-stable),100,0,,,
+StableMate (significant-stable),200,0,,,
+Stability Selection (ranked frequency),10,4,d1;d2;d3;d4,0.7093038138479778,0.6129874881870435
+Stability Selection (ranked frequency),25,4,d1;d2;d3;d4,0.742925504851909,0.598081214618234
+Stability Selection (ranked frequency),50,4,d1;d2;d3;d4,0.7177471876162381,0.5879287237353221
+Stability Selection (ranked frequency),100,4,d1;d2;d3;d4,0.6881554498618598,0.6082378743532298
+Stability Selection (ranked frequency),200,4,d1;d2;d3;d4,0.68085507388896,0.5745848042886528

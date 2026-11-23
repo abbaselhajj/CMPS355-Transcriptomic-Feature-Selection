@@ -1,0 +1,29 @@
+\section{Discussion}
+\label{sec:discussion}
+\subsection{Predictive transfer and gene-list consistency are distinct}
+\label{sec:discussion_tradeoff}
+This study tested whether feature-selection strategies that predict CD in an unseen cohort also return consistent gene lists. Under a fixed $L_2$ logistic classifier, Elastic Net (0.731), LASSO (0.728) and TENTACLES (0.723) achieved closely clustered mean AUROCs, while TENTACLES achieved the highest mean balanced accuracy (0.655). The highest-scoring selector changed across D1--D4, within-cohort 95\% bootstrap CIs overlapped broadly, and simple training-only differential-expression baselines (\texttt{limma-voom} and Welch $t$-test) matched or exceeded all complex selectors on descriptive mean AUROC. Even size-matched random panels achieved strong discrimination on D1 and D4. Consequently, raw cross-cohort AUROC alone does not justify complex selectors or establish statistical superiority across four dependent folds.
+
+Gene agreement diverged markedly from prediction. TENTACLES achieved more than double the LOCO mean Jaccard of LASSO and Elastic Net (0.210 versus 0.102 and 0.092) on smaller panels (76.5 versus 120--124 genes). Fixed-$K$ sensitivity further confirmed that unequal panel sizes materially influence downstream AUROC---particularly for Stability Selection, whose mean AUROC increased from 0.628 ($\pi \ge 0.60$) to 0.743 at $K=25$---without isolating panel size as the sole causal factor. Correlated predictors substitute for one another across folds, and upstream tuning, preprocessing and support sizes all shape observed performance.
+
+\subsection{What reproducibility can be inferred?}
+\label{sec:discussion_reproducibility}
+Because LOCO training pairs share two of three cohorts, their six pairwise Jaccard values quantify sensitivity to omitting one cohort rather than independent replication, and uniform Monte Carlo nulls serve strictly as size-only chance references rather than dependence-calibrated tests. Once shared training samples were removed in disjoint single-cohort fits, LASSO and Elastic Net satisfied $p_{\mathrm{sel}} \le n$ in every cohort yet saw pairwise Jaccard fall to 0.007 and 0.023 with zero four-way genes. Even disjoint cohorts may share annotation, upstream preprocessing or pipeline assumptions, so they are not a fully dependence-calibrated null model either.
+
+\subsection{Pan-inflammatory signatures versus CD-specific biology and pathways}
+\label{sec:discussion_pathway}
+Because every cohort contrasts CD against \emph{Not IBD} controls without ulcerative colitis or non-IBD infectious colitis comparators, recurrently selected genes (\textit{NOS2}, \textit{MMP3}, \textit{CLDN18}, \textit{FFAR2}, \textit{PAQR5}, \textit{PML}) and recurring TENTACLES Reactome interleukin and GPCR pathways likely reflect general intestinal mucosal inflammation and epithelial barrier disruption rather than CD-specific pathogenesis. Distinguishing CD-specific biomarkers would require inflamed-control comparators (such as ulcerative colitis) and prospective clinical validation.
+
+Pathway enrichment also remains conditional on panel size and annotation coverage. TENTACLES yielded significant terms in D2--D4 (and none in D1), whereas Stability Selection and StableMate produced zero significant pathways on their 4--20-gene panels. Pathway enrichment was not repeated on the final LASSO and Elastic Net panels, so their pathway-level reproducibility cannot be inferred from this analysis.
+
+\subsection{Cohort composition and implementation limitations}
+\label{sec:discussion_limits}
+Four limitations bound interpretation. First, the four analytical cohorts combine six BioProjects differing in CD prevalence, biopsy site (with D4 tissue site missing), library depth and control source (including colorectal-cancer surgical tissue in D3); descriptive PCA reflects cohort structure without separating technical from biological variation. Second, D1--D3 arrived pre-filtered to 10,061 genes versus 41,257 in D4; without raw FASTQ reprocessing, the magnitude and potential differential impact of inherited upstream filtering remain unknown. Third, our D3 $n=69$ QC-exclusion analysis is strictly test-only rescoring rather than full cross-cohort retraining. Fourth, the benchmark combined newly refitted sparse models, reference baselines, and TENTACLES runs with controlled downstream evaluation of previously generated StableMate and Stability Selection panels (Supplementary Table~\ref{tab:s6}). Some TENTACLES learner-level fits generated software warnings, which limit the conclusiveness of its native tuning diagnostics.
+
+\subsection{Implications}
+\label{sec:discussion_implications}
+Transcriptomic benchmark reports should pair cohort-specific held-out metrics and uncertainty intervals with simple differential-expression and random-panel baselines, size-aware overlap references and clear model specifications and convergence checks, rather than reporting a single mean accuracy or consensus gene list. Within this four-cohort benchmark, the evidence supports an empirical comparison of candidate selectors, not clinically validated CD-specific biomarkers.
+
+\section{Conclusion}
+\label{sec:conclusion}
+Across 689 intestinal RNA-seq samples, five feature-selection strategies and simple reference baselines demonstrated that cross-cohort predictive discrimination and gene-signature reproducibility are weakly coupled. Simple univariate differential expression matched complex selectors on descriptive mean AUROC, and ensemble consensus (TENTACLES) achieved the highest LOCO gene overlap without guaranteeing disjoint-cohort stability or CD-specific clinical validity. Predictive transfer, selection consistency and biological specificity must therefore be evaluated and reported as distinct outcomes.

@@ -55,3 +55,8 @@ The independent verification script checks the four held-out rows for each of fi
 ## Citation
 
 Please cite the accompanying manuscript and the original algorithm/dataset publications listed in `manuscript/references.bib`. See `reports/final_manuscript/FINAL_SCIENTIFIC_AUDIT.md` for source verification and limitations.
+
+
+## Post-review revised manuscript and evidence (23 November 2026)
+
+The corrected experiments, source manuscript, aggregate reproducibility tables, reviewer-specific response letters and marked manuscripts are archived in [`post_review_2026-11-23/`](post_review_2026-11-23/README.md). This supplements rather than overwrites the original pre-review release. The course submission awaits author/coauthor sign-off.

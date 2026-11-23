@@ -1,0 +1,43 @@
+\subsection{Cross-cohort evaluation and controlled classifier}
+\label{sec:evaluation_design}
+Each LOCO round held out one analytical cohort and used the other three for model development (Table~\ref{tab:splits}). Training and held-out samples were disjoint within each round. Because some cohorts comprise multiple BioProjects, this is cohort-level rather than six-study-level validation. In every training fold, gene eligibility filtering (CPM $>1$ in at least 10\% of training samples), $\log_2(1+\mathrm{CPM})$ transformation and z-score standardisation were fitted strictly on training samples and applied read-only to the held-out cohort, yielding eligible universes of 8,337 (D1), 8,406 (D2), 8,409 (D3) and 8,438 (D4) genes (four-way intersection: 8,237; disjoint single-cohort common intersection: 7,928).
+
+\begin{table}[!t]
+\caption{Outer LOCO assignments. Each held-out cohort is excluded from its own preprocessing, gene selection and model training.}
+\label{tab:splits}
+\centering\footnotesize
+\begin{tabular}{@{}lrrl@{}}
+\toprule
+Test cohort & Train $n$ & Test $n$ & Development cohorts\\
+\midrule
+D1 & 429 & 260 & D2, D3, D4\\
+D2 & 510 & 179 & D1, D3, D4\\
+D3 & 613 & 76 & D1, D2, D4\\
+D4 & 515 & 174 & D1, D2, D3\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+To compare selected gene panels and reference baselines under an identical downstream learner, each panel selected from the development cohorts was evaluated with a fixed class-balanced $L_2$-regularised logistic regression (\texttt{scikit-learn} \cite{pedregosa2011scikit}, \texttt{liblinear}, $C=1.0$, seed 123, CD positive, probability threshold 0.5). Method-specific native predictions were retained separately and are not conflated with controlled-classifier scores.
+
+\subsection{Prediction metrics and uncertainty}
+\label{sec:predictive_metrics}
+We report eight held-out metrics per cohort (AUROC, AUPRC, balanced accuracy, sensitivity, specificity, precision, F1 and Brier score) together with standardised 2,000-resample patient-stratified bootstrap 95\% confidence intervals for within-cohort AUROC and balanced accuracy across all five primary methods and reference baselines. Four-cohort means and sample standard deviations ($n-1$ denominator) are strictly descriptive; we do not perform pooled cross-fold hypothesis tests because the four LOCO folds share two-thirds of their training cohorts.
+
+\subsection{Chance-adjusted gene overlap, fixed-$K$ sensitivity and pathway agreement}
+\label{sec:reproducibility_metrics}
+Let $S_{m,f}$ denote the genes selected by method $m$ when cohort $f$ is held out. Pairwise Jaccard similarity was averaged across all six unordered LOCO pairs:
+\begin{equation}
+\bar{J}_m=\frac{1}{6}\sum_{a<b}\frac{|S_{m,a}\cap S_{m,b}|}{|S_{m,a}\cup S_{m,b}|}.
+\label{eq:jaccard}
+\end{equation}
+Because raw Jaccard scales with panel size and each fold has a distinct eligible universe $U_a \neq U_b$, we derived exact uniform-draw expected pairwise and four-way intersections:
+\begin{align}
+\mathbb{E}[|A \cap B|] &= \frac{k_a \, k_b \, |U_a \cap U_b|}{|U_a| \, |U_b|}, \label{eq:overlap_null_pw}\\
+\mathbb{E}\!\left[\left|\bigcap_{i=1}^{4} A_i\right|\right] &= \left|\bigcap_{i=1}^{4} U_i\right| \prod_{i=1}^{4} \frac{k_i}{|U_i|}, \label{eq:overlap_null_4w}
+\end{align}
+paired with 10,000 independent uniform Monte Carlo draws per comparison to obtain 95\% null intervals for Jaccard similarity and the overlap coefficient. Because LOCO training folds share two of three cohorts, these uniform nulls provide a size-only chance reference rather than a dependence-calibrated hypothesis test.
+
+To evaluate sensitivity to unequal panel sizes, we tested fixed panel sizes $K\in\{10,25,50,100,200\}$ strictly for continuously ranked methods: Stability Selection (ranked frequency; 4/4 folds across all $K$) and sparse $|\beta|$-ranked LASSO and Elastic Net strictly where $K \le n_{\mathrm{nonzero}}$ (otherwise flagged inapplicable). Unranked consensus sets (TENTACLES and StableMate) were excluded by design (0/4 evaluable folds) rather than forcing arbitrary tie-breaks; we report the number of evaluable folds for every panel size and do not equate partial-support averages ($1/4$ or $3/4$) with full four-fold averages.
+
+For pathway agreement, Reactome v98 pathways \cite{ragueneau2026reactome} containing 10--500 eligible genes were tested for over-representation via one-sided hypergeometric tests with Benjamini--Hochberg correction ($q<0.05$) \cite{benjamini1995fdr}; pathway Jaccard was undefined when both sets were empty. Pathway findings are reported only for the gene panels evaluated with the final methods. Reactome enrichment was available for TENTACLES, Stability Selection and StableMate; enrichment of the final LASSO and Elastic Net panels was not performed.

@@ -1,0 +1,380 @@
+{
+  "schema_version": "phase2_overlap_and_size_manifest_v3",
+  "created_utc": "2026-11-22T21:25:00Z",
+  "c1_certified_output_dir": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs",
+  "notes": [
+    "All 28 archived panel source entries carry exact pinned SHA-256 digests verified against audited Drive archives.",
+    "All 8 eligible-gene universe CSVs are bound to C1's CERTIFIED_COMPLETE output directory (eligible_universes_manifest.json + dataset_sha256 verification).",
+    "LOCO methods strictly use loco_{d1..d4}_eligible_genes.csv; Independent-cohort methods strictly use indep_{d1..d4}_eligible_genes.csv.",
+    "TENTACLES V1 (5/8) and historical SAGA LASSO are strictly excluded as primary comparators."
+  ],
+  "methods": [
+    {
+      "name": "Corrected Nested LASSO",
+      "role": "primary",
+      "scope": "LOCO_size_only_null_training_dependent",
+      "fixed_k_eligible": true,
+      "expected_panel_sizes": {
+        "d1": 94,
+        "d2": 77,
+        "d3": 219,
+        "d4": 90
+      },
+      "expected_universe_sizes": {
+        "d1": 8337,
+        "d2": 8406,
+        "d3": 8409,
+        "d4": 8438
+      },
+      "panel_sources": {
+        "d1": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_lasso_20261122_v1/panels/loco_d1_corrected_liblinear_tol1e6_selected_genes.csv",
+          "gene_col": "gene",
+          "score_col": "abs_coef",
+          "sort_abs": true,
+          "expected_sha256": "81c377fc9dc2f05ea99a3c3913d99014cd070229a37451b07ec85947aa39838b"
+        },
+        "d2": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_lasso_20261122_v1/panels/loco_d2_corrected_liblinear_tol1e6_selected_genes.csv",
+          "gene_col": "gene",
+          "score_col": "abs_coef",
+          "sort_abs": true,
+          "expected_sha256": "c0f976b3e8fd2d8273af8375d0b82a725480521bc05a7e8aa9bbf38a768512fc"
+        },
+        "d3": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_lasso_20261122_v1/panels/loco_d3_corrected_liblinear_tol1e6_selected_genes.csv",
+          "gene_col": "gene",
+          "score_col": "abs_coef",
+          "sort_abs": true,
+          "expected_sha256": "283f9f391002ac5b7e0c1dbfd8e8ec1cb7a9efab9f98244baed40e610fefbd81"
+        },
+        "d4": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_lasso_20261122_v1/panels/loco_d4_corrected_liblinear_tol1e6_selected_genes.csv",
+          "gene_col": "gene",
+          "score_col": "abs_coef",
+          "sort_abs": true,
+          "expected_sha256": "6603d4042d4a46426dad989e725c3ad87d1f9029a70e6da489272200ce4517c3"
+        }
+      },
+      "universe_csvs": {
+        "d1": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d1_eligible_genes.csv",
+        "d2": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d2_eligible_genes.csv",
+        "d3": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d3_eligible_genes.csv",
+        "d4": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d4_eligible_genes.csv"
+      }
+    },
+    {
+      "name": "Corrected Nested Elastic Net",
+      "role": "primary",
+      "scope": "LOCO_size_only_null_training_dependent",
+      "fixed_k_eligible": true,
+      "expected_panel_sizes": {
+        "d1": 11,
+        "d2": 28,
+        "d3": 430,
+        "d4": 28
+      },
+      "expected_universe_sizes": {
+        "d1": 8337,
+        "d2": 8406,
+        "d3": 8409,
+        "d4": 8438
+      },
+      "panel_sources": {
+        "d1": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_elastic_net_20261122_v1/panels/loco_d1_corrected_enet_selected_genes.csv",
+          "gene_col": "gene",
+          "score_col": "coef",
+          "sort_abs": true,
+          "expected_sha256": "6c0df15d21cdb8adc3341a83da7660de3b743525139b99cf3fd86314f1abbd2a"
+        },
+        "d2": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_elastic_net_20261122_v1/panels/loco_d2_corrected_enet_selected_genes.csv",
+          "gene_col": "gene",
+          "score_col": "coef",
+          "sort_abs": true,
+          "expected_sha256": "b1e780facbcfe3cf777663d00b06b696e8aa611ca4ff64269ed02d57b6bdb316"
+        },
+        "d3": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_elastic_net_20261122_v1/panels/loco_d3_corrected_enet_selected_genes.csv",
+          "gene_col": "gene",
+          "score_col": "coef",
+          "sort_abs": true,
+          "expected_sha256": "031c096eabb20926ee8213930a4ffc94f45bfe2ffeed1c7ea5a6edf780b525af"
+        },
+        "d4": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_elastic_net_20261122_v1/panels/loco_d4_corrected_enet_selected_genes.csv",
+          "gene_col": "gene",
+          "score_col": "coef",
+          "sort_abs": true,
+          "expected_sha256": "7b7517e0954d5b8da2bc3631291f35328b5609e1f0d423f4d89faafd0f94c5b1"
+        }
+      },
+      "universe_csvs": {
+        "d1": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d1_eligible_genes.csv",
+        "d2": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d2_eligible_genes.csv",
+        "d3": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d3_eligible_genes.csv",
+        "d4": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d4_eligible_genes.csv"
+      }
+    },
+    {
+      "name": "TENTACLES V2 (6/9 consensus)",
+      "role": "primary",
+      "scope": "LOCO_size_only_null_training_dependent",
+      "fixed_k_eligible": false,
+      "expected_panel_sizes": {
+        "d1": 73,
+        "d2": 91,
+        "d3": 81,
+        "d4": 61
+      },
+      "expected_universe_sizes": {
+        "d1": 8337,
+        "d2": 8406,
+        "d3": 8409,
+        "d4": 8438
+      },
+      "panel_sources": {
+        "d1": {
+          "zip_path": "/content/drive/MyDrive/CMPS355_Research/results/tentacles/CMPS355_TENTACLES_V2_Final_Results_For_Analysis.zip",
+          "zip_member": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/selected_genes.csv",
+          "fold_col": "heldout",
+          "gene_col": "gene",
+          "expected_sha256": "030e21165941c888968b2bc85b601dc804ad9380bf49fc7360c14685ae8dc80e"
+        },
+        "d2": {
+          "zip_path": "/content/drive/MyDrive/CMPS355_Research/results/tentacles/CMPS355_TENTACLES_V2_Final_Results_For_Analysis.zip",
+          "zip_member": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/selected_genes.csv",
+          "fold_col": "heldout",
+          "gene_col": "gene",
+          "expected_sha256": "030e21165941c888968b2bc85b601dc804ad9380bf49fc7360c14685ae8dc80e"
+        },
+        "d3": {
+          "zip_path": "/content/drive/MyDrive/CMPS355_Research/results/tentacles/CMPS355_TENTACLES_V2_Final_Results_For_Analysis.zip",
+          "zip_member": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/selected_genes.csv",
+          "fold_col": "heldout",
+          "gene_col": "gene",
+          "expected_sha256": "030e21165941c888968b2bc85b601dc804ad9380bf49fc7360c14685ae8dc80e"
+        },
+        "d4": {
+          "zip_path": "/content/drive/MyDrive/CMPS355_Research/results/tentacles/CMPS355_TENTACLES_V2_Final_Results_For_Analysis.zip",
+          "zip_member": "runs/tentacles_cd_positive_v2_external_nmin6/20261108T194642089312Z/selected_genes.csv",
+          "fold_col": "heldout",
+          "gene_col": "gene",
+          "expected_sha256": "030e21165941c888968b2bc85b601dc804ad9380bf49fc7360c14685ae8dc80e"
+        }
+      },
+      "universe_csvs": {
+        "d1": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d1_eligible_genes.csv",
+        "d2": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d2_eligible_genes.csv",
+        "d3": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d3_eligible_genes.csv",
+        "d4": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d4_eligible_genes.csv"
+      }
+    },
+    {
+      "name": "StableMate (significant-stable)",
+      "role": "primary",
+      "scope": "LOCO_size_only_null_training_dependent",
+      "fixed_k_eligible": false,
+      "expected_panel_sizes": {
+        "d1": 20,
+        "d2": 14,
+        "d3": 14,
+        "d4": 15
+      },
+      "expected_universe_sizes": {
+        "d1": 8337,
+        "d2": 8406,
+        "d3": 8409,
+        "d4": 8438
+      },
+      "panel_sources": {
+        "d1": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/runs/stablemate/d1_K2000_B1000/significant_stable_genes.csv",
+          "gene_col": "gene",
+          "expected_sha256": "ef83cb7df6c9f03344807ddc267073348c6452c761de449b2de050418d993e92"
+        },
+        "d2": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/runs/stablemate/d2_K2000_B1000/significant_stable_genes.csv",
+          "gene_col": "gene",
+          "expected_sha256": "35b4783ddcd7a205f13c75f431429c7a7b1cd0d52b14da3bba94dfb68088edab"
+        },
+        "d3": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/runs/stablemate/d3_K2000_B1000/significant_stable_genes.csv",
+          "gene_col": "gene",
+          "expected_sha256": "2f310b5b80918163b1ee09be81c675015c8139ba17401c7d5964543d3c6a5381"
+        },
+        "d4": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/runs/stablemate/d4_K2000_B1000/significant_stable_genes.csv",
+          "gene_col": "gene",
+          "expected_sha256": "b3717b2f524308cf0e9155fb8211c518d8779de31295f14b6731c89dc8441f1b"
+        }
+      },
+      "universe_csvs": {
+        "d1": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d1_eligible_genes.csv",
+        "d2": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d2_eligible_genes.csv",
+        "d3": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d3_eligible_genes.csv",
+        "d4": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d4_eligible_genes.csv"
+      }
+    },
+    {
+      "name": "Stability Selection (ranked frequency)",
+      "role": "primary",
+      "scope": "LOCO_size_only_null_training_dependent",
+      "fixed_k_eligible": true,
+      "expected_panel_sizes": {
+        "d1": 4,
+        "d2": 9,
+        "d3": 7,
+        "d4": 5
+      },
+      "expected_universe_sizes": {
+        "d1": 8337,
+        "d2": 8406,
+        "d3": 8409,
+        "d4": 8438
+      },
+      "panel_sources": {
+        "d1": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/runs/stability_selection/d1/loco_training/gene_ranking.csv",
+          "gene_col": "gene",
+          "filter_col": "selected_pi_0_6",
+          "filter_value": true,
+          "score_col": "selection_frequency",
+          "tie_score_col": "mean_abs_subsample_coefficient",
+          "sort_abs": false,
+          "expected_sha256": "e4d618b0195fedc2e67daa79836943ffff84f2f3eb30a09d82f128d10d5d4d64"
+        },
+        "d2": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/runs/stability_selection/d2/loco_training/gene_ranking.csv",
+          "gene_col": "gene",
+          "filter_col": "selected_pi_0_6",
+          "filter_value": true,
+          "score_col": "selection_frequency",
+          "tie_score_col": "mean_abs_subsample_coefficient",
+          "sort_abs": false,
+          "expected_sha256": "d0c80c8b55500e0603b4e2f875286e8bcbc9b1ded142e86d2dbf6666736eb0bd"
+        },
+        "d3": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/runs/stability_selection/d3/loco_training/gene_ranking.csv",
+          "gene_col": "gene",
+          "filter_col": "selected_pi_0_6",
+          "filter_value": true,
+          "score_col": "selection_frequency",
+          "tie_score_col": "mean_abs_subsample_coefficient",
+          "sort_abs": false,
+          "expected_sha256": "5df9b64b7e82ba6cbb718c4e3e0af9b5c1ea167e4bc154ffe9fbf39be768a9ff"
+        },
+        "d4": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/runs/stability_selection/d4/loco_training/gene_ranking.csv",
+          "gene_col": "gene",
+          "filter_col": "selected_pi_0_6",
+          "filter_value": true,
+          "score_col": "selection_frequency",
+          "tie_score_col": "mean_abs_subsample_coefficient",
+          "sort_abs": false,
+          "expected_sha256": "20e2ea38688c5d8a393bfdb178b182239efb42d8851f50b8c9f9c08eda1f44f4"
+        }
+      },
+      "universe_csvs": {
+        "d1": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d1_eligible_genes.csv",
+        "d2": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d2_eligible_genes.csv",
+        "d3": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d3_eligible_genes.csv",
+        "d4": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/loco_d4_eligible_genes.csv"
+      }
+    },
+    {
+      "name": "Corrected Nested LASSO (Independent)",
+      "role": "primary",
+      "scope": "Independent_cohort_null",
+      "fixed_k_eligible": false,
+      "expected_panel_sizes": {
+        "d1": 27,
+        "d2": 92,
+        "d3": 9,
+        "d4": 31
+      },
+      "expected_universe_sizes": {
+        "d1": 8395,
+        "d2": 8334,
+        "d3": 8419,
+        "d4": 8164
+      },
+      "panel_sources": {
+        "d1": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_lasso_20261122_v1/panels/indep_d1_corrected_liblinear_tol1e6_selected_genes.csv",
+          "gene_col": "gene",
+          "expected_sha256": "fb5887f71e46e90621aa898837b3e4601c99090d13c26d123c5dcf10eea78a26"
+        },
+        "d2": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_lasso_20261122_v1/panels/indep_d2_corrected_liblinear_tol1e6_selected_genes.csv",
+          "gene_col": "gene",
+          "expected_sha256": "59b76a5a2aaaaddd244b0649e2a38fc8bdad340c37351d8f4388ebd22b4f2e44"
+        },
+        "d3": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_lasso_20261122_v1/panels/indep_d3_corrected_liblinear_tol1e6_selected_genes.csv",
+          "gene_col": "gene",
+          "expected_sha256": "56a76b3ab331216f7d30fac5248c1f4c71e651b9589888c1dcd7649c6ad16b0d"
+        },
+        "d4": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_lasso_20261122_v1/panels/indep_d4_corrected_liblinear_tol1e6_selected_genes.csv",
+          "gene_col": "gene",
+          "expected_sha256": "b1cdb3b6e2be7c9ae2050a72d5bd56ff8503a648ee8f7df36fa12c7f98b687c2"
+        }
+      },
+      "universe_csvs": {
+        "d1": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/indep_d1_eligible_genes.csv",
+        "d2": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/indep_d2_eligible_genes.csv",
+        "d3": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/indep_d3_eligible_genes.csv",
+        "d4": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/indep_d4_eligible_genes.csv"
+      }
+    },
+    {
+      "name": "Corrected Nested Elastic Net (Independent)",
+      "role": "primary",
+      "scope": "Independent_cohort_null",
+      "fixed_k_eligible": false,
+      "expected_panel_sizes": {
+        "d1": 152,
+        "d2": 198,
+        "d3": 109,
+        "d4": 91
+      },
+      "expected_universe_sizes": {
+        "d1": 8395,
+        "d2": 8334,
+        "d3": 8419,
+        "d4": 8164
+      },
+      "panel_sources": {
+        "d1": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_elastic_net_20261122_v1/panels/indep_d1_corrected_enet_selected_genes.csv",
+          "gene_col": "gene",
+          "expected_sha256": "c73fcea62035137dc38c85f7a5ea66be54424a431e616128146e258af77f07ae"
+        },
+        "d2": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_elastic_net_20261122_v1/panels/indep_d2_corrected_enet_selected_genes.csv",
+          "gene_col": "gene",
+          "expected_sha256": "4a3623b370d070fc9c8f6f2af31b639a77ef37779e1f7b5f20ed9c1c9e7acf09"
+        },
+        "d3": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_elastic_net_20261122_v1/panels/indep_d3_corrected_enet_selected_genes.csv",
+          "gene_col": "gene",
+          "expected_sha256": "b5edb2caba18601478e5ca1155160e7a516525b2e4a63218c49df63e22b4bf61"
+        },
+        "d4": {
+          "path": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/corrected_nested_elastic_net_20261122_v1/panels/indep_d4_corrected_enet_selected_genes.csv",
+          "gene_col": "gene",
+          "expected_sha256": "8072621f428fe5a4eb3782c1c633dd790f75531ac1ed4fc2acba8f1af8c61366"
+        }
+      },
+      "universe_csvs": {
+        "d1": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/indep_d1_eligible_genes.csv",
+        "d2": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/indep_d2_eligible_genes.csv",
+        "d3": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/indep_d3_eligible_genes.csv",
+        "d4": "/content/drive/MyDrive/CMPS355_Research/peer_review_revision_2026/03_followup_experiments/phase2_baselines_20261122_v3/outputs/eligible_universes/indep_d4_eligible_genes.csv"
+      }
+    }
+  ],
+  "expected_c1_script_sha256": "14387756ef1c85f0a2bf8c1cf0a108bc2575cec645365ae180e48b9c7ce6a1e1"
+}

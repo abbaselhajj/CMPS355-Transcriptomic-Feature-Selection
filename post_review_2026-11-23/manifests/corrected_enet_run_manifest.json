@@ -1,0 +1,44 @@
+{
+  "execution_script_name": "corrected_nested_elastic_net_v2.py",
+  "execution_script_version": "v2.0",
+  "execution_script_sha256": "bc36f7379399e73b70e885d153d194b4a10943c04e9c6d1761c482afa71d0925",
+  "execution_created_utc": "2026-11-22T20:09:44.400592+00:00",
+  "finalizer_script_name": "corrected_nested_elastic_net_v2.py",
+  "finalizer_script_sha256": "bc36f7379399e73b70e885d153d194b4a10943c04e9c6d1761c482afa71d0925",
+  "finalized_utc": "2026-11-22T20:09:44.400592+00:00",
+  "finalization_mode": "full_certification",
+  "certification_status": "CERTIFIED_COMPLETE",
+  "certification_summary": {
+    "expected_fits": 200,
+    "found_fits": 200,
+    "certified_fits": 200,
+    "failed_or_uncertified_fits": 0,
+    "n_issues": 0
+  },
+  "certification_issues": [],
+  "config_fingerprint": "336e837508fbd7121b1f2a4ad704b36ff6d7443b9f92dc4775843af19790ea0f",
+  "dataset": {
+    "source_mode": "archive",
+    "source_path": "/content/drive/MyDrive/CMPS355_Research/data/validated/ibd_dataset_sample_aligned.zip",
+    "zip_sha256": "8a83f20035fcac5ae5d8bfe496e4d7491e47400b61ca1080b828c8ad54e91a74",
+    "csv_sha256": {
+      "count_d1_aligned.csv": "0f595746ea572a349580d9d3c0242559345b88c927c161b1982933102e6c812d",
+      "count_d2_aligned.csv": "2ff413b813e3e4d10927da7f8342eccb35a00205c319c0eb714388aea97f245d",
+      "count_d3_aligned.csv": "33b2e51e682da4c41f53becf00b1fc88bb5710293ce2d9d87837bca86a7b3d48",
+      "count_d4_aligned.csv": "c26d8db65b335c89967bd4e072c61a6b7adcb57715c5fe36107d9bd8cd9409e0",
+      "desc_d1.csv": "91aadec65bb7f2c1945e7941222b9f490a0c9041d495b8d22606f614484c7b33",
+      "desc_d2.csv": "4198f574167754eb00e007ded8cfc2528d50ead0d80b96c1a5cc8139131a140b",
+      "desc_d3.csv": "9db3c39975a50afcbd851d3cdcdf56f1e59e7f9bbe18b3b80fd7328400a31332",
+      "desc_d4.csv": "bdd5f6d5ae9a6713470f1eadab2e62a961a38d417f27401359d55b5d906a1193"
+    },
+    "hashes_verified": true
+  },
+  "software": {
+    "python": "3.13.18",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "sklearn": "1.6.1",
+    "r_version": "R version 4.6.1 (2026-06-24)",
+    "glmnet_version": "5.2"
+  }
+}

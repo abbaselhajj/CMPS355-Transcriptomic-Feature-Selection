@@ -1,0 +1,21 @@
+{
+  "dataset_sha256": "8a83f20035fcac5ae5d8bfe496e4d7491e47400b61ca1080b828c8ad54e91a74",
+  "execution_script_sha256": "126d64b5193ff4855304c3ad008c3078c88ea7b9e36673b5b49feb20fcab4be8",
+  "finalized_utc": "2026-11-23T04:28:41.666146+00:00",
+  "fourway_formula": "E[|A1 cap A2 cap A3 cap A4|] = |U1 cap U2 cap U3 cap U4| * prod_i (k_i / |U_i|)",
+  "include_fixed_k": true,
+  "loco_caveat": "LOCO training folds share 2/3 of cohorts; independent uniform draws provide a size-only chance reference, not a dependence-calibrated hypothesis test.",
+  "manifest_sha256": "d2ca01eb7baa056d3d20ccbf23b7eadd819c0081ca97f2b5b7feacc8ef3e9374",
+  "n_boot": 2000,
+  "n_fixed_k_rows": 100,
+  "n_fourway_rows": 7,
+  "n_mc": 10000,
+  "n_methods": 7,
+  "n_pairwise_rows": 42,
+  "n_verified_c3_checkpoints": 44,
+  "pairwise_formula": "E[|A cap B|] = k_a * k_b * |U_a cap U_b| / (|U_a| * |U_b|)",
+  "script_name": "phase2_overlap_and_size_v3.py",
+  "script_version": "phase2_overlap_and_size_v3.0",
+  "seed": 20261122,
+  "status": "CERTIFIED_COMPLETE"
+}

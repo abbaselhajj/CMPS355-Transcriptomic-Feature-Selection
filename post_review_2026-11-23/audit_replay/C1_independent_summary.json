@@ -1,0 +1,82 @@
+{
+  "manifest_status": "CERTIFIED_COMPLETE",
+  "file_hashes": 218,
+  "sha_missing": [],
+  "sha_mismatches": [],
+  "all_hashes_match": true,
+  "source_code_sha256": "14387756ef1c85f0a2bf8c1cf0a108bc2575cec645365ae180e48b9c7ce6a1e1",
+  "dataset_sha256": "8a83f20035fcac5ae5d8bfe496e4d7491e47400b61ca1080b828c8ad54e91a74",
+  "n_independently_replayed_classifiers": 48,
+  "max_metric_difference": {
+    "auroc": 0.0,
+    "auprc": 1.1102230246251565e-16,
+    "bacc": 5.551115123125783e-17,
+    "f1": 1.1102230246251565e-16,
+    "brier": 1.1102230246251565e-16,
+    "sensitivity": 1.1102230246251565e-16,
+    "specificity": 1.1102230246251565e-16,
+    "precision": 1.1102230246251565e-16,
+    "tp": 0.0,
+    "tn": 0.0,
+    "fp": 0.0,
+    "fn": 0.0,
+    "pred_prob": 9.992007221626409e-16
+  },
+  "max_probability_replay_difference": 9.992007221626409e-16,
+  "n_random_receipts_validated": 2000,
+  "n_random_summaries_validated": 20,
+  "max_random_summary_difference": 1.249000902703301e-16,
+  "n_checkpoints_validated": 68,
+  "universe_checks": [
+    {
+      "cohort": "d1",
+      "scope": "loco",
+      "n_genes": 8337,
+      "match": true
+    },
+    {
+      "cohort": "d1",
+      "scope": "indep",
+      "n_genes": 8395,
+      "match": true
+    },
+    {
+      "cohort": "d2",
+      "scope": "loco",
+      "n_genes": 8406,
+      "match": true
+    },
+    {
+      "cohort": "d2",
+      "scope": "indep",
+      "n_genes": 8334,
+      "match": true
+    },
+    {
+      "cohort": "d3",
+      "scope": "loco",
+      "n_genes": 8409,
+      "match": true
+    },
+    {
+      "cohort": "d3",
+      "scope": "indep",
+      "n_genes": 8419,
+      "match": true
+    },
+    {
+      "cohort": "d4",
+      "scope": "loco",
+      "n_genes": 8438,
+      "match": true
+    },
+    {
+      "cohort": "d4",
+      "scope": "indep",
+      "n_genes": 8164,
+      "match": true
+    }
+  ],
+  "n_errors": 0,
+  "errors": []
+}

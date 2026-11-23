@@ -1,0 +1,31 @@
+{
+  "checkpoints_verified": 44,
+  "exact_fourway_reconstructions": 7,
+  "exact_pair_reconstructions": 42,
+  "macro_reproduced": 25,
+  "max_abs_metric_delta": 2.220446049250313e-16,
+  "max_abs_prob_delta": 1.1102230246251565e-16,
+  "mc_fourway_replayed": 7,
+  "mc_pair_replayed": 42,
+  "panel_rankings_verified": 44,
+  "sha_list_count": 138,
+  "status_counts": {
+    "NOT_APPLICABLE_EXCEEDS_NONZERO_SUPPORT (K=100 > n_nonzero=11)": 1,
+    "NOT_APPLICABLE_EXCEEDS_NONZERO_SUPPORT (K=100 > n_nonzero=28)": 2,
+    "NOT_APPLICABLE_EXCEEDS_NONZERO_SUPPORT (K=100 > n_nonzero=77)": 1,
+    "NOT_APPLICABLE_EXCEEDS_NONZERO_SUPPORT (K=100 > n_nonzero=90)": 1,
+    "NOT_APPLICABLE_EXCEEDS_NONZERO_SUPPORT (K=100 > n_nonzero=94)": 1,
+    "NOT_APPLICABLE_EXCEEDS_NONZERO_SUPPORT (K=200 > n_nonzero=11)": 1,
+    "NOT_APPLICABLE_EXCEEDS_NONZERO_SUPPORT (K=200 > n_nonzero=28)": 2,
+    "NOT_APPLICABLE_EXCEEDS_NONZERO_SUPPORT (K=200 > n_nonzero=77)": 1,
+    "NOT_APPLICABLE_EXCEEDS_NONZERO_SUPPORT (K=200 > n_nonzero=90)": 1,
+    "NOT_APPLICABLE_EXCEEDS_NONZERO_SUPPORT (K=200 > n_nonzero=94)": 1,
+    "NOT_APPLICABLE_EXCEEDS_NONZERO_SUPPORT (K=25 > n_nonzero=11)": 1,
+    "NOT_APPLICABLE_EXCEEDS_NONZERO_SUPPORT (K=50 > n_nonzero=11)": 1,
+    "NOT_APPLICABLE_EXCEEDS_NONZERO_SUPPORT (K=50 > n_nonzero=28)": 2,
+    "UNRANKED_CONSENSUS_EXCLUDED_BY_DESIGN": 40,
+    "VALID_CONTINUOUS_RANK": 20,
+    "VALID_NONZERO_BETA_RANK": 24
+  },
+  "valid_models": 44
+}

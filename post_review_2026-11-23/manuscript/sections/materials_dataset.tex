@@ -1,0 +1,37 @@
+\section{Materials and Methods}
+\subsection{Data sources and cohort characteristics}
+\label{sec:dataset}
+We used the processed intestinal tissue RNA-seq count matrices compiled for TENTACLES \cite{montesi2026tentacles}; we did not reprocess raw sequencing reads. The collection contains 689 samples labelled CD (495) or \emph{Not IBD} (194), grouped into four analytical cohorts from six BioProjects (Table~\ref{tab:cohorts}). The comparison label is retained from the source data, but does not imply that every control was a healthy volunteer. For instance, D3 includes non-tumour intestinal tissue from colorectal-cancer surgery \cite{friedrich2021il1}, and none of the four cohorts includes ulcerative colitis or non-IBD infectious colitis comparators.
+
+\begin{table}[!t]
+\caption{Cohort composition by source BioProject.}
+\label{tab:cohorts}
+\centering\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+Cohort & BioProject(s) & $n$ & CD & Not IBD\\
+\midrule
+D1 & PRJNA248469 & 260 & 218 & 42\\
+D2 & \shortstack[l]{PRJNA565216\\PRJNA985602} & 179 & 134 & 45\\
+D3 & PRJNA702434 & 76 & 34 & 42\\
+D4 & \shortstack[l]{PRJNA728646\\PRJNA961704} & 174 & 109 & 65\\
+\midrule
+Total & Six BioProjects & 689 & 495 & 194\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The CD fraction ranges from 44.7\% (D3) to 83.8\% (D1), and median assigned counts across common genes range from 1.78 to 12.01 million per sample. The cohorts also differ in tissue site: D1 comprises ileal biopsies; D2 includes ileal and colonic biopsies; D3 includes small- and large-intestinal samples; and D4 does not provide tissue-site labels in the supplied metadata. Source count CSVs lacked sample identifiers and had 670 rows ordered differently from their metadata. We recovered the IDs from accompanying R data files, aligned expression rows to metadata and checked count/label correspondence without altering the expression values.
+
+The original matrices arrived with 10,061 genes for D1--D3 and 41,257 genes for D4; intersecting gene symbols without inspecting disease labels produced our 9,983-gene shared universe. Because raw FASTQ files were not re-quantified and exact upstream filtering logs for D1--D3 were not supplied in the published archive, all evaluated methods inherit this identical upstream input restriction. Its absolute impact on cross-cohort discrimination, potential degree of upstream leakage and possible differential effect across selectors cannot be established without upstream provenance or raw-read reprocessing.
+
+Seven D3 records carried source exclusion flags (\texttt{qc=EXCLUDE}) from the original study's quality-control assessment \cite{friedrich2021il1} (four CD: \texttt{SAMN17945351}, \texttt{SAMN17945455}, \texttt{SAMN17947683}, \texttt{SAMN17947802}; three \emph{Not IBD}: \texttt{SAMN17947199}, \texttt{SAMN17947323}, \texttt{SAMN17947407}). Retaining all 76 D3 samples in the primary benchmark preserves exact alignment with Montesi \emph{et al.} \cite{montesi2026tentacles}; in addition, we conducted a held-out D3 test-only rescoring sensitivity analysis ($n=69$: 30 CD, 39 \emph{Not IBD}) without retraining D1, D2 or D4. Exploratory principal-component analysis (PCA) shows cohort-associated expression structure alongside disease labels (Fig.~\ref{fig:pca}). It does not establish whether cohort separation is technical or biological and was not used in model fitting.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\columnwidth]{cohort_pca_ieee.pdf}
+\caption{Exploratory PCA of $\log_2(1+\mathrm{CPM})$ expression across 9,983 shared genes ($n=689$), encoded by cohort (colour), disease label (filled circle: CD; open triangle: \emph{Not IBD}) and cohort centroid ($\times$). This descriptive visualisation was not used in model fitting.}
+\label{fig:pca}
+\end{figure}

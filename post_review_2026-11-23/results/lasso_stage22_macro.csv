@@ -1,0 +1,2 @@
+method,mean_auroc,sd_auroc,mean_auprc,mean_bacc,sd_bacc,mean_sensitivity,mean_specificity,mean_f1,mean_brier,mean_panel_size,min_panel_size,max_panel_size,mean_loco_jaccard,genes_in_all_4_folds
+Corrected Nested LASSO (liblinear tol=1e-6 is=1e4),0.7278442789039764,0.06653460349058074,0.8245407419242187,0.6197018518520159,0.02341475369207957,0.7127248270251549,0.5266788766788767,0.6966484808220986,0.30951300675710886,120.0,77,219,0.1016139120032201,2

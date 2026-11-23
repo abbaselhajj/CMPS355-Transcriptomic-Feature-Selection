@@ -1,0 +1,44 @@
+\documentclass[conference,a4paper]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+\graphicspath{{figures/}}
+\hyphenation{trans-crip-tomic re-pro-duc-ibil-ity}
+\begin{document}
+\title{Benchmarking Transcriptomic Feature Selection for Cross-Cohort Predictive Performance and Biomarker Reproducibility}
+\author{\IEEEauthorblockN{Abbas El-Hajj Youssef \quad Jad Mcheik}
+\IEEEauthorblockA{Department of Computer Science, American University of Beirut\\
+Beirut, Lebanon\\
+\href{mailto:aae145@mail.aub.edu}{aae145@mail.aub.edu} \quad
+\href{mailto:jmm60@mail.aub.edu}{jmm60@mail.aub.edu}}}
+\maketitle
+\begin{abstract}
+Predictive performance and reproducibility of selected genes are complementary objectives in transcriptomic biomarker research. We compared LASSO, Elastic Net, Stability Selection, StableMate and TENTACLES using 689 intestinal RNA-seq samples from four cohorts (495 Crohn's disease and 194 \emph{Not IBD}) and 9,983 common genes. In leave-one-cohort-out evaluation, panels selected on three cohorts were assessed on the fourth using an identical class-balanced logistic classifier. Predictive discrimination was evaluated alongside selected-gene overlap, differential-expression and random-panel baselines, and panel-size sensitivity. Mean held-out AUROC ranged from 0.628 for Stability Selection to 0.731 for Elastic Net (LASSO 0.728; TENTACLES 0.723), while TENTACLES attained the highest mean balanced accuracy (0.655). Simple training-only differential-expression panels were competitive: the top ten genes ranked by limma-voom and Welch's test yielded mean AUROCs of 0.748 and 0.772, respectively. TENTACLES produced the highest mean gene-set Jaccard across leave-one-cohort-out selections (0.210), compared with LASSO (0.102) and Elastic Net (0.092); however, the training cohorts overlap, and a size-matched uniform null does not account for that dependence. Independently fitted LASSO and Elastic Net panels showed substantially lower agreement. Results varied by cohort and panel size, with overlapping uncertainty intervals. Reactome analysis of TENTACLES panels identified enriched pathways in three of four cohorts, but the available comparison groups do not establish Crohn's-disease specificity. Cross-cohort predictive performance and gene-selection reproducibility should therefore be assessed separately and interpreted in light of cohort heterogeneity and model-selection constraints.
+\end{abstract}
+\begin{IEEEkeywords}
+Crohn's disease, RNA sequencing, feature selection, cross-cohort validation, biomarker reproducibility
+\end{IEEEkeywords}
+\input{sections/introduction.tex}
+\input{sections/materials_dataset.tex}
+\input{sections/sparse_models.tex}
+\input{sections/selection_methods.tex}
+\input{sections/evaluation_principles.tex}
+\input{sections/results.tex}
+\input{sections/discussion_conclusion.tex}
+\section*{Code and Data Availability}
+The public project repository at \url{https://github.com/abbaselhajj/CMPS355-Transcriptomic-Feature-Selection} hosts the benchmark codebase, notebooks, methodological documentation, and initial curated results. The complete LaTeX source, figures, and supplementary tables accompany this manuscript. The analysed RNA-seq datasets are identified by BioProject accession in Table~\ref{tab:cohorts} and described in the cited studies. No new patient data were collected.
+
+\section*{Acknowledgment}
+We thank Prof.\ Rida Assaf for research guidance and the peer reviewers for their constructive feedback. AI-assisted tools contributed to scripting, numerical checks and language editing; responsibility for the study design, data analysis and conclusions remains with the authors.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\clearpage
+\onecolumn
+\appendix
+\input{sections/supplementary_materials.tex}
+\end{document}

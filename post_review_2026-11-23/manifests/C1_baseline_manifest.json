@@ -1,0 +1,28 @@
+{
+  "all_stage22_converged": true,
+  "cohorts_verified": [
+    "d1",
+    "d2",
+    "d3",
+    "d4"
+  ],
+  "config_fingerprint": "06fa38f50865e1290b501173abae37af42bf3ee1b1d0971eb35c858acd75fa67",
+  "dataset_sha256": "8a83f20035fcac5ae5d8bfe496e4d7491e47400b61ca1080b828c8ad54e91a74",
+  "execution_script_sha256": "14387756ef1c85f0a2bf8c1cf0a108bc2575cec645365ae180e48b9c7ce6a1e1",
+  "finalized_utc": "2026-11-23T04:00:30.840590+00:00",
+  "finalizer_script_sha256": "14387756ef1c85f0a2bf8c1cf0a108bc2575cec645365ae180e48b9c7ce6a1e1",
+  "n_baseline_rows": 48,
+  "n_boot": 2000,
+  "n_random": 100,
+  "n_random_comparator_rows": 20,
+  "n_random_draws_total": 2000,
+  "n_verified_checkpoints": 68,
+  "run_mode": "full",
+  "script_name": "phase2_baselines_v3.py",
+  "script_version": "phase2_baselines_v3.0",
+  "stage22_C": 1.0,
+  "stage22_seed": 123,
+  "stage22_tol": "sklearn_default_1e-4",
+  "status": "CERTIFIED_COMPLETE",
+  "use_limma": true
+}

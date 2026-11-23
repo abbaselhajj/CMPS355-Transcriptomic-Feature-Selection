@@ -1,0 +1,36 @@
+\subsection{Stability Selection}
+\label{sec:stability_method}
+We implemented complementary-pairs Stability Selection using a class-balanced $L_1$-logistic base model \cite{meinshausen2010stability}. Within each training set, 30 random partitions produced 60 complementary half-sample fits, with base regularisation calibrated on training data to select approximately 50 genes per fit. Each gene's selection frequency was its number of selections divided by 60. A frequency threshold of 0.75 resulted in one, zero, three and two selected genes in D1--D4, respectively. Since no classifier can be trained on the empty D2 panel, a threshold of $\pi \ge 0.60$ was chosen after observing these counts (four, nine, seven and five genes). This post-hoc change is explicitly disclosed, and fixed-$K$ analyses separately evaluate the complete selection-frequency ranking. The method-specific predictive pipeline (top-50 nonzero-frequency genes) is kept distinct from the $\pi \ge 0.60$ thresholded signature. This implementation computes complementary-pairs selection frequencies rather than using the authors' \texttt{stabs} package, and no theoretical false-selection bound is claimed.
+
+\subsection{StableMate}
+\label{sec:stablemate_method}
+We used the authors' \texttt{StableMate} R package (version 0.1.0) \cite{deng2024stablemate}. For each LOCO fit, the three development cohorts defined the environments. The native procedure combined a random LASSO prefilter of 50 predictors per candidate, 2,000 candidate models in each of the prediction and stability ensembles, and 1,000 bootstrap replicates for importance estimation. A gene entered the stable-significant panel only if both its predictive and stability significance scores exceeded 0.975. Native held-out predictions used the fitted StableMate logistic predictor (four-cohort mean AUROC 0.743, balanced accuracy 0.624); these were kept strictly separate from the controlled-classifier experiment, which refitted the fixed $L_2$ learner to the selected panel. The saved native StableMate predictions were evaluated separately from the common downstream classifier, without repeating method-native model training.
+
+\subsection{TENTACLES consensus procedure}
+\label{sec:tentacles_method}
+We used the authors' \texttt{TENTACLES} R package (version 0.1.0) \cite{montesi2026tentacles} as an algorithm-consensus selector. On each LOCO development set, native RNA-seq preprocessing was followed by nine eligible classifier--selector pairs: random forest/correlation, MLP/ROC, bagged MLP/ROC, linear SVM/Boruta, C5 rules/Boruta, LightGBM/ROC, decision tree/Boruta, MARS/Boruta and PLS/Boruta, tuned with five-fold cross-validation, five candidate settings, class downsampling and F1 as target metric.
+
+In the implementation used here, \emph{CD} was explicitly set as the positive class for cross-validation and F1-based tuning. The XGBoost/base component was omitted from consensus aggregation because complete feature-importance output was unavailable for every cohort, leaving nine eligible learners. A gene was retained when it received votes from at least six of these nine learners. A five-of-nine threshold was evaluated separately as a sensitivity analysis; it does not denote a different feature-selection algorithm. All feature selection was restricted to the development cohorts, and the common downstream logistic classifier provided the reported external predictions.
+
+\subsection{Reference baselines}
+\label{sec:baselines}
+To anchor selector performance under the identical LOCO splits and controlled downstream classifier, we included four reference baselines fitted strictly within each training split over the shared 9,983-gene universe: (i) all 9,983 shared genes (no-selection baseline); (ii) all fold-specific training-eligible genes (CPM $>1$ in $\ge 10\%$ of training samples; 8,337--8,438 genes); (iii) training-only univariate differential expression (DE) via \texttt{limma-voom} \cite{law2014voom} (\texttt{\textasciitilde 0 + class + cohort} with \texttt{edgeR} TMM normalisation \cite{robinson2010edger}) and a Welch $t$-test companion (alphabetical gene-name tie-break) at $K\in\{10,25,50,100,200\}$; and (iv) size-matched random panels ($B=100$ draws per method-fold from each fold's training-eligible universe; 2,000 draws total). Within-cohort descriptive empirical $p$-values, $p_{\mathrm{emp}}=(1+\sum_{b=1}^{100}\mathbb{I}[m_b \ge m_{\mathrm{obs}}])/101$ (minimum resolution $1/101 \approx 0.0099$), benchmark panel-size-conditioned performance within each cohort and are not cross-method significance tests.
+
+\begin{table}[!t]
+\caption{Selected-gene panels evaluated by the controlled downstream classifier.}
+\label{tab:method_overview}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{@{}p{2.2cm}p{5.7cm}@{}}
+\toprule
+Method & Panel definition \\
+\midrule
+LASSO & Nonzero \texttt{liblinear} coefficients ($|\beta|>10^{-8}$, \texttt{tol=1e-6}) \\
+Elastic Net & Nonzero \texttt{glmnet}+Newton coefficients ($|\beta|>10^{-8}$) \\
+Stability Selection & Frequency $\geq 0.60$ (post-hoc fallback from $0.75$) \\
+StableMate & Predictive and stability significance each $>0.975$ \\
+TENTACLES & Consensus $\ge 6/9$ eligible voters (CD-positive orientation) \\
+\bottomrule
+\end{tabular}
+\end{table}

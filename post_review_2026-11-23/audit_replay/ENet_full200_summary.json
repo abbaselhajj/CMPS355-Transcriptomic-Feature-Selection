@@ -1,0 +1,126 @@
+{
+  "hashes": {
+    "checked": 255,
+    "mismatch": 0
+  },
+  "fit_groups": {
+    "indep_cv": {
+      "n": 96,
+      "max_kkt_independently": 5.963418647780827e-11,
+      "polished": 51,
+      "fallback": 0
+    },
+    "indep_final": {
+      "n": 4,
+      "max_kkt_independently": 1.3921308550379763e-11,
+      "polished": 4,
+      "fallback": 0
+    },
+    "loco_final": {
+      "n": 4,
+      "max_kkt_independently": 2.6552982035354944e-11,
+      "polished": 4,
+      "fallback": 0
+    },
+    "loco_inner": {
+      "n": 96,
+      "max_kkt_independently": 8.79518680108049e-11,
+      "polished": 66,
+      "fallback": 0
+    }
+  },
+  "numerical": {
+    "max_kkt_diff": 8.526512829121202e-14,
+    "max_objective_component_diff": 8.526512829121202e-14,
+    "max_auc_diff": 2.220446049250313e-16,
+    "max_real_raw_kkt": 8.79518680108049e-11,
+    "n_fits_checked": 200
+  },
+  "loco_overlap": {
+    "mean_jaccard": 0.09158255050808305,
+    "four_way": 0
+  },
+  "indep_overlap": {
+    "mean_jaccard": 0.023347327487388214,
+    "four_way": 0
+  },
+  "stage22": {
+    "d1": {
+      "n": 260,
+      "panel_size": 11,
+      "auroc": 0.8760375709916994,
+      "bacc": 0.49770642201834864,
+      "spec": 0.0,
+      "max_refit_prob_delta": 4.440892098500626e-16,
+      "bootstrap_CI_diff": 1.1102230246251565e-16
+    },
+    "d2": {
+      "n": 179,
+      "panel_size": 28,
+      "auroc": 0.669983416252073,
+      "bacc": 0.5939469320066335,
+      "spec": 0.8222222222222222,
+      "max_refit_prob_delta": 2.3532331638875803e-10,
+      "bootstrap_CI_diff": 1.1102230246251565e-16
+    },
+    "d3": {
+      "n": 76,
+      "panel_size": 430,
+      "auroc": 0.6477591036414566,
+      "bacc": 0.5931372549019608,
+      "spec": 0.3333333333333333,
+      "max_refit_prob_delta": 6.24105211954884e-10,
+      "bootstrap_CI_diff": 1.1102230246251565e-16
+    },
+    "d4": {
+      "n": 174,
+      "panel_size": 28,
+      "auroc": 0.7306986591390262,
+      "bacc": 0.6482709950599859,
+      "spec": 0.9846153846153847,
+      "max_refit_prob_delta": 7.302491944471967e-13,
+      "bootstrap_CI_diff": 0.0
+    }
+  },
+  "prediction_reconstruction": {
+    "max_probability_abs_diff": 6.24105211954884e-10,
+    "max_metric_abs_diff": 3.3306690738754696e-16,
+    "max_CI_abs_diff": 1.1102230246251565e-16
+  },
+  "d3_qc_test_only": {
+    "excluded_ids": [
+      "SAMN17945351",
+      "SAMN17945455",
+      "SAMN17947683",
+      "SAMN17947802",
+      "SAMN17947199",
+      "SAMN17947323",
+      "SAMN17947407"
+    ],
+    "n_full": 76,
+    "n_excluded": 7,
+    "n_remainder": 69,
+    "class_counts_remaining": {
+      "CD": 30,
+      "Not_IBD": 39
+    },
+    "auroc_n76": 0.6477591036414566,
+    "auroc_n69": 0.6495726495726495,
+    "bacc_n76": 0.5931372549019608,
+    "bacc_n69": 0.5871794871794872,
+    "auprc_n69": 0.5688182782421419,
+    "brier_n69": 0.4023641781524674,
+    "f1_n69": 0.6265060240963856,
+    "sensitivity_n69": 0.8666666666666667,
+    "specificity_n69": 0.3076923076923077
+  },
+  "macro": {
+    "mean_auroc": 0.7311196875060637,
+    "mean_auprc": 0.8123754505449761,
+    "mean_bacc": 0.5832654009967322,
+    "mean_f1": 0.6331317785740882,
+    "mean_brier": 0.3125012237722601
+  },
+  "errors": [],
+  "passed": true
+}

@@ -1,0 +1,2 @@
+method,mean_auroc,sd_auroc,mean_auprc,mean_bacc,sd_bacc,mean_sensitivity,mean_specificity,mean_f1,mean_brier,mean_panel_size,min_panel_size,max_panel_size,mean_loco_jaccard,mean_indep_jaccard,genes_in_all_4_loco_folds
+Corrected Nested Elastic Net v2 (R glmnet + Newton Polish),0.7311196875060637,0.10277483612884344,0.8123754505449761,0.5832654009967322,0.06260355354019893,0.6314880669507293,0.535042735042735,0.6331317785740882,0.31250122377226014,124.25,11,430,0.0915825505080831,0.023347327487388245,0
