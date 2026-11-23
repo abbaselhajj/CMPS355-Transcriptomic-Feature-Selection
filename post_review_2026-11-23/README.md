@@ -1,4 +1,4 @@
-# CMPS355 — Post-review reproducibility release (23 November 2026)
+# CMPS355 : Post-review reproducibility release (23 November 2026)
 
 This versioned directory documents the peer-review response to the four-cohort Crohn's disease RNA-seq feature-selection benchmark. **The pre-review code and manuscript remain in their original repository paths.** This revision has been prepared for the authors' final review; it has not been submitted as coursework.
 
@@ -9,7 +9,7 @@ This versioned directory documents the peer-review response to the four-cohort C
 - Optional combined [response](submission/Response_Both_Reviewers.pdf) and [marked manuscript](submission/Highlighted_Both_Reviewers.pdf).
 - Buildable conference IEEEtran manuscript source, 18-entry bibliography, manuscript sections and vector figures: [manuscript/](manuscript/).
 
-The reviewer-specific highlighted PDFs reproduce **the exact same revised text and page layout** as the clean manuscript. They highlight passages and figures/tables relevant to particular comments; they are reviewer-scoped evidence highlights, not word-by-word latexdiff.
+The reviewer-specific highlighted PDFs preserve the clean manuscript's 12 A4 pages and article text. Complete revised passages are highlighted, and updated figures and tables are outlined. Numbered visible page notes and PDF annotations explain each local change and link it to the corresponding comment ID in the response letter. Reviewer 1 uses A1 to A10; Reviewer 2 uses L1 to L8. The combined version distinguishes reviewer-specific and shared revisions. These are reviewer-scoped change markings, not token-level latexdiff.
 
 ## What was revised
 Five feature-selection methods were evaluated under one controlled downstream classifier: LASSO, Elastic Net, Stability Selection, StableMate and TENTACLES. Data comprise 689 samples in four cohorts, with 9,983 shared genes and leave-one-cohort-out evaluation.

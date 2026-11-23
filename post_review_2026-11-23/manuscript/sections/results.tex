@@ -18,12 +18,12 @@ TENTACLES & Primary & 76.5 [61--91] & 0.723 (0.100) & \textbf{0.655} (0.093) & \
 StableMate & Primary & 15.8 [14--20] & 0.659 (0.083) & 0.598 (0.110) & 0.801 & 0.642 & 0.310 & 0.033 / 0.001 (34.9$\times$) & 0\\
 Stability Selection\ ($\pi\ge 0.60$) & Primary & 6.3 [4--9] & 0.628 (0.051) & 0.563 (0.050) & 0.797 & 0.656 & 0.258 & 0.128 / 0.0004 (338.2$\times$) & 0\\
 \midrule
-All-9,983 Shared Genes & Baseline & 9,983 (all) & 0.681 (0.073) & 0.572 (0.035) & 0.775 & 0.659 & 0.336 & --- & ---\\
-Train-Eligible ($\ge 10\%$) & Baseline & 8,397.5 [8,337--8,438] & 0.673 (0.130) & 0.592 (0.076) & 0.764 & 0.624 & 0.371 & --- & ---\\
-\texttt{limma-voom} Top-10 & Baseline & 10 (fixed) & 0.748 (0.101) & 0.631 (0.094) & 0.856 & 0.723 & 0.215 & --- & ---\\
-\texttt{limma-voom} Top-100 & Baseline & 100 (fixed) & 0.710 (0.117) & 0.649 (0.106) & 0.814 & 0.705 & 0.236 & --- & ---\\
-Welch $t$-test Top-10 & Baseline & 10 (fixed) & 0.772 (0.081) & 0.601 (0.081) & 0.867 & 0.625 & 0.254 & --- & ---\\
-Welch $t$-test Top-100 & Baseline & 100 (fixed) & 0.732 (0.083) & 0.660 (0.064) & 0.842 & 0.722 & 0.228 & --- & ---\\
+All-9,983 Shared Genes & Baseline & 9,983 (all) & 0.681 (0.073) & 0.572 (0.035) & 0.775 & 0.659 & 0.336 & N/A & N/A\\
+Train-Eligible ($\ge 10\%$) & Baseline & 8,397.5 [8,337--8,438] & 0.673 (0.130) & 0.592 (0.076) & 0.764 & 0.624 & 0.371 & N/A & N/A\\
+\texttt{limma-voom} Top-10 & Baseline & 10 (fixed) & 0.748 (0.101) & 0.631 (0.094) & 0.856 & 0.723 & 0.215 & N/A & N/A\\
+\texttt{limma-voom} Top-100 & Baseline & 100 (fixed) & 0.710 (0.117) & 0.649 (0.106) & 0.814 & 0.705 & 0.236 & N/A & N/A\\
+Welch $t$-test Top-10 & Baseline & 10 (fixed) & 0.772 (0.081) & 0.601 (0.081) & 0.867 & 0.625 & 0.254 & N/A & N/A\\
+Welch $t$-test Top-100 & Baseline & 100 (fixed) & 0.732 (0.083) & 0.660 (0.064) & 0.842 & 0.722 & 0.228 & N/A & N/A\\
 \bottomrule
 \end{tabular}}
 \end{table*}
@@ -127,7 +127,7 @@ In fixed-$K$ sensitivity (Table~\ref{tab:fixedk}; Fig.~\ref{fig:overlap}B), Stab
 Table~\ref{tab:results_pathways} summarises Reactome v98 enrichment for the TENTACLES, Stability Selection and StableMate panels. TENTACLES yielded 0, 11, 8 and 9 significant pathways across D1--D4, respectively (mean pathway Jaccard 0.256), including recurring interleukin-signalling and G-protein-coupled receptor pathways in D2--D4. Stability Selection and StableMate yielded no significant pathways in the assessed folds. Enrichment was not recalculated for the final LASSO or Elastic Net panels; their pathway results are therefore not reported or interpreted here.
 
 \begin{table}[!t]
-\caption{Reactome v98 enrichment ($q<0.05$) for gene panels with available final-analysis pathway results. A dash indicates that pathway agreement cannot be calculated when no significant pathways are present.}
+\caption{Reactome v98 enrichment ($q<0.05$) for gene panels with available final-analysis pathway results. N/A indicates that pathway agreement cannot be calculated when no significant pathways are present.}
 \label{tab:results_pathways}
 \centering\footnotesize
 \setlength{\tabcolsep}{3.5pt}
@@ -136,8 +136,8 @@ Table~\ref{tab:results_pathways} summarises Reactome v98 enrichment for the TENT
 Method & D1/D2/D3/D4 & Folds & $\bar{J}$\\
 \midrule
 TENTACLES & 0/11/8/9 & 3/4 & 0.256\\
-Stability Selection & 0/0/0/0 & 0/4 & ---\\
-StableMate & 0/0/0/0 & 0/4 & ---\\
+Stability Selection & 0/0/0/0 & 0/4 & N/A\\
+StableMate & 0/0/0/0 & 0/4 & N/A\\
 \bottomrule
 \end{tabular}
 \end{table}

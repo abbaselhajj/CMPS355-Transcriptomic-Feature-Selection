@@ -1,5 +1,9 @@
 \documentclass[conference,a4paper]{IEEEtran}
 \usepackage{cite}
+\usepackage{etoolbox}
+% Use colons rather than the default em dash after these headings.
+\patchcmd{\abstract}{---\relax}{:\space\relax}{}{}
+\patchcmd{\IEEEkeywords}{---\relax}{:\space\relax}{}{}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -30,7 +34,7 @@ Crohn's disease, RNA sequencing, feature selection, cross-cohort validation, bio
 \input{sections/results.tex}
 \input{sections/discussion_conclusion.tex}
 \section*{Code and Data Availability}
-The public project repository at \url{https://github.com/abbaselhajj/CMPS355-Transcriptomic-Feature-Selection} hosts the benchmark codebase, notebooks, methodological documentation, and initial curated results. The complete LaTeX source, figures, and supplementary tables accompany this manuscript. The analysed RNA-seq datasets are identified by BioProject accession in Table~\ref{tab:cohorts} and described in the cited studies. No new patient data were collected.
+The public project repository at \url{https://github.com/abbaselhajj/CMPS355-Transcriptomic-Feature-Selection} hosts the benchmark codebase, notebooks, methodological documentation, and the post-review results in the versioned revision directory. The complete LaTeX source, figures, and supplementary tables accompany this manuscript. The analysed RNA-seq datasets are identified by BioProject accession in Table~\ref{tab:cohorts} and described in the cited studies. No new patient data were collected.
 
 \section*{Acknowledgment}
 We thank Prof.\ Rida Assaf for research guidance and the peer reviewers for their constructive feedback. AI-assisted tools contributed to scripting, numerical checks and language editing; responsibility for the study design, data analysis and conclusions remains with the authors.
