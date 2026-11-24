@@ -1,0 +1,48 @@
+{
+  "baseline_commit": "8c06ea0b07a5256d507e578bd32f9bbb8e4f37dc",
+  "revision_date": "2026-11-24",
+  "scope": "18 original reviewer comments; final visual and reporting corrections; no new numerical analyses",
+  "verification": {
+    "CMPS355_Updated_Manuscript.pdf": {
+      "drive_filename": "CMPS355_Updated_Manuscript_Clean.pdf",
+      "sha256": "fd563a2a94c822ee8c5d68286dd969d1b142a6db2fe3c3a94ae1bdc44a41ce6f",
+      "pages": 12
+    },
+    "Highlighted_Reviewer1_Aya_Daou.pdf": {
+      "drive_filename": "CMPS355_Manuscript_Highlighted_Aya_Daou.pdf",
+      "sha256": "ba10a21fe8c670db165950a6862bdebc58b7845d266e0c3b455dff16dfbca3a7",
+      "pages": 12,
+      "annotations": 42,
+      "article_text_identical": true
+    },
+    "Highlighted_Reviewer2_Leen.pdf": {
+      "drive_filename": "CMPS355_Manuscript_Highlighted_Leen.pdf",
+      "sha256": "6d617080dea40a6758edb73ac002c6308d05bc7b36534db4010a8d688a5968b1",
+      "pages": 12,
+      "annotations": 42,
+      "article_text_identical": true
+    },
+    "Highlighted_Both_Reviewers.pdf": {
+      "drive_filename": "CMPS355_Manuscript_Highlighted_Both_Reviewers.pdf",
+      "sha256": "0bd6444f9d48e87ad8a991afa0c51d99f2ac5a3b28653126caabaaf6e2111990",
+      "pages": 12,
+      "annotations": 57,
+      "article_text_identical": true
+    },
+    "Response_Reviewer1_Aya_Daou.pdf": {
+      "drive_filename": "CMPS355_Response_to_Aya_Daou.pdf",
+      "sha256": "a2b6c42317b1c84ee365ba4050afa512bc5d9dcbc2e3b69f239ebb534a5a401c",
+      "pages": 2
+    },
+    "Response_Reviewer2_Leen.pdf": {
+      "drive_filename": "CMPS355_Response_to_Leen.pdf",
+      "sha256": "ea0f3262ffd6898370b6e8aae53d60611a37c839216febfd61d30694298cab5e",
+      "pages": 2
+    },
+    "Response_Both_Reviewers.pdf": {
+      "drive_filename": "CMPS355_Response_to_Both_Reviewers.pdf",
+      "sha256": "ef1b3c1602cf6af24d7f4de4b7c2b708b5473726b134c91d13b34c78e1d00952",
+      "pages": 3
+    }
+  }
+}

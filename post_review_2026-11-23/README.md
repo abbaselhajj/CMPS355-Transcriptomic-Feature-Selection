@@ -39,3 +39,7 @@ Two reviewer requests remain bounded by available evidence: exact **upstream fil
 ## Original-manuscript comparison check (24 November 2026)
 
 The marked copies and point-by-point letters were rechecked against the preserved pre-review manuscript source at commit `8c06ea0b07a5256d507e578bd32f9bbb8e4f37dc` and the two original reviews. The revised Table S6 distinguishes post-review sparse-model refits and new reference analyses from the pre-existing CD-positive TENTACLES, StableMate and Stability Selection panels. TENTACLES native model training was not repeated for this revision. No experimental numerical results were changed in this editorial/provenance correction.
+
+## Final visual and reporting polish (24 November 2026)
+
+Figures 3 and 4 and supplementary Figure S1 were redrawn from frozen aggregate results to prevent label collisions. Section II-B restores the Elastic Net hyperparameter grid, and Table S6 now explicitly records D3 held-out-only QC rescoring. The response letters have improved page breaks. No model was refitted or result changed. The latest seven PDFs are byte-identical to the corresponding Drive files; the existing GitHub filenames have been retained for link stability. The exact filename mapping, page counts and SHA-256 digests are in [submission/BUILD_MANIFEST.json](submission/BUILD_MANIFEST.json), and [submission/SHA256SUMS.txt](submission/SHA256SUMS.txt) supports independent verification. Author approval remains pending.
