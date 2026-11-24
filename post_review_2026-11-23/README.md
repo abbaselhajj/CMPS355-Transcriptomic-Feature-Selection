@@ -34,3 +34,8 @@ Four-fold descriptive mean AUROC for primary methods: Elastic Net 0.7311, LASSO 
 Data alignment ZIP SHA-256: `8a83f20035fcac5ae5d8bfe496e4d7491e47400b61ca1080b828c8ad54e91a74`. The RNA-seq source BioProject accessions and original citations are in the manuscript. The public repository does **not** redistribute the count matrices, patient-level predictions, private audit archives or native R model objects. An end-to-end reproduction requires independently obtaining the source inputs under their data-use permissions, recreating the pinned Python/R environment and executing the scripts with the complete original inputs. A fresh clone alone is not a full rerun.
 
 Two reviewer requests remain bounded by available evidence: exact **upstream filtering criteria** for D1–D3 cannot be independently reconstructed, and Reactome enrichment was **not rerun** on the corrected LASSO and Elastic Net final panels. Both are disclosed in the paper and reviewer response. Authors retain responsibility for final wording, scientific interpretation and submission.
+
+
+## Original-manuscript comparison check (24 November 2026)
+
+The marked copies and point-by-point letters were rechecked against the preserved pre-review manuscript source at commit `8c06ea0b07a5256d507e578bd32f9bbb8e4f37dc` and the two original reviews. The revised Table S6 distinguishes post-review sparse-model refits and new reference analyses from the pre-existing CD-positive TENTACLES, StableMate and Stability Selection panels. TENTACLES native model training was not repeated for this revision. No experimental numerical results were changed in this editorial/provenance correction.

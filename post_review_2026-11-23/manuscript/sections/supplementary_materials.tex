@@ -174,7 +174,7 @@ Analysis & Execution basis & Implementation scope\\
 \midrule
 Input alignment & Reconstructed from source count matrices and R metadata & Sample identifiers and class labels aligned without modifying counts\\
 LASSO and Elastic Net & Refitted on LOCO and single-cohort training splits & \texttt{liblinear} ($\mathrm{tol}=10^{-6}$) and \texttt{glmnet} ($\mathrm{thresh}=10^{-12}$) with KKT optimality checks\\
-TENTACLES & Nine-learner consensus fitted on LOCO development splits & CD-positive tuning, 6/9 primary threshold, 5/9 sensitivity, and downstream classifier\\
+TENTACLES & Existing pre-review CD-positive nine-learner consensus panels and predictions & 6/9 primary and 5/9 sensitivity retained; downstream results checked and intervals updated; native training not repeated\\
 StableMate and Stability Selection & Existing selected panels evaluated with the common downstream classifier & Downstream $L_2$ logistic fits and bootstrap intervals computed; method-native training not repeated\\
 Simple reference baselines & Computed under identical LOCO splits and downstream classifier & All-9,983, train-eligible, \texttt{limma-voom}, Welch DE, and $B=100$ random panels\\
 Overlap and fixed-$K$ analyses & Computed over fold-specific eligible gene universes & Exact expectations, 10,000-draw Monte Carlo nulls, and ranked fixed-$K$ evaluations\\
