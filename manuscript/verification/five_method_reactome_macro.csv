@@ -1,6 +1,0 @@
-method,mean_pathway_jaccard_defined,defined_pairs
-StableMate_significant_stable,,0
-TENTACLES_V2_nmin6,0.25641025641025644,6
-elastic_net,0.27314814814814814,6
-lasso,0.2222222222222222,6
-stability_selection_cutoff_0p60,,0
